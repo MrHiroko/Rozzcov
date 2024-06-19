@@ -16,4 +16,8 @@ export default {
   max-width: 250px
 </style>
 
-
+<script setup>
+defineOptions({
+  name: 'App'
+});
+</script>
