@@ -15,7 +15,9 @@ export default {
   width: 100%
   max-width: 250px
 </style>
-
+<template>
+  хуй
+</template>
 <script setup>
 defineOptions({
   name: 'App'
