@@ -7,6 +7,7 @@ export default {
     }
   }
 }
+цфвцфвфцвфцвфц
 </script>
 
 <style lang="sass" scoped>
