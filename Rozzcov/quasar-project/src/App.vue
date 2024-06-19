@@ -1,23 +1,22 @@
+<template>
+  <div class="q-pa-md q-gutter-md">
+    <q-btn color="teal" size="sm" label="Unread Mails">
+      <q-badge color="orange" floating transparent>
+        ∞
+      </q-badge>
+    </q-btn>
 
-<script>
-export default {
-  setup () {
-    return {
-      lorem: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-    }
-  }
-}
+    <q-btn dense round flat icon="email">
+      <q-badge color="red" floating transparent>
+        4
+      </q-badge>
+    </q-btn>
 
-</script>
-
-<style lang="sass" scoped>
-.my-card
-  width: 100%
-  max-width: 250px
-</style>
-
-<script setup>
-defineOptions({
-  name: 'App'
-});
-</script>
+    <div class="text-h4">
+      Title
+      <q-badge transparent align="middle" color="orange">
+        app v3.0.0
+      </q-badge>
+    </div>
+  </div>
+</template>
