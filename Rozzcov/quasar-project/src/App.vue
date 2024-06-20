@@ -1,23 +1,115 @@
+ <script>
+ import MenuStr from '../src/components/MenuStr.vue';
+export default{
+  components:{
+    MenuStr,
+  },
+  data() {
+		return {
+			
+		};
+	},
 
+	mounted() {
+
+	},
+
+	methods: {
+		
+	},
+};
+</script>
 <template>
-  <div class="q-pa-md q-gutter-md">
-    <q-btn color="teal" size="sm" label="Unread Mails">
-      <q-badge color="orange" floating transparent>
-        ∞
-      </q-badge>
-    </q-btn>
-
-    <q-btn dense round flat icon="email">
-      <q-badge color="red" floating transparent>
-        4
-      </q-badge>
-    </q-btn>
-
-    <div class="text-h4">
-      Title
-      <q-badge transparent align="middle" color="orange">
-        app v3.0.0
-      </q-badge>
-    </div>
-  </div>
+<menu-str></menu-str>
 </template>
+<style>
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+</style>
