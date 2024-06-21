@@ -36,9 +36,14 @@ export default {
         </div>
         <nav class="nav_menu">
             <ul>
-                <li class="nav_li" v-for="item in menuNav" :key="item.id"><button><img class="nav_img" :src="item.image">{{ item.title }}</button></li>
+                <li class="nav_li" v-for="item in menuNav" :key="item.id"><button><img class="nav_img"
+                            :src="item.image"><span>{{ item.title }}</span></button></li>
             </ul>
         </nav>
+        <div class="social_media">
+            <div class="social_media_youtube"><img src="src/assets/img_MenuStr/youtube.svg"></div>
+            <div class="social_media_vk"><img src="src/assets/img_MenuStr/vk.svg"></div>
+        </div>
     </div>
 </template>
 
@@ -135,13 +140,15 @@ h6 {
 .ro_logo {
     text-align: center;
     padding-top: 38px;
-    
+
 }
 
 .menu_user {
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 286px;
-    height: 1080px;
+    height: 100vh;
     border-right: 2px solid black;
 }
 
@@ -154,29 +161,48 @@ h6 {
     width: 200px;
     height: 40px;
 }
-.nav_menu{
+
+.nav_menu {
     font-size: 14px;
     margin-top: 20px;
-    height: 250px;
+    height: 300px;
 }
-.nav_li{
+
+.nav_li {
     width: 200px;
     height: 34px;
     margin-top: 18px;
-    
+    font-size: 16px;
+
 }
-.nav_li button{
+
+.nav_li button {
     height: 34px;
     width: 172px;
     border-radius: 15px;
     background: none;
     transition: .2s ease-out;
-}
-.nav_li button:hover{
-    background-color:#0000FF;
-    transition: .2s ease-out;
-    color:white;
-    
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
+.nav_li button:hover {
+    background-color: #0000FF;
+    transition: .2s ease-out;
+    color: white;
+}
+
+
+
+.social_media {
+    margin-top: 140%;
+    width: 80px;
+    height: 30px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    
+}
 </style>
