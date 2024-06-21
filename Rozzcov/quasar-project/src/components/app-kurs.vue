@@ -8,7 +8,7 @@ export default {
          {title:"ОЛИМПИАДЫ ПО ИСТОРИИ",textes: ["Отечественная история","Мировая история","Культура"],color:["#7800FF"]},
          {title:"ОЛИМПИАДЫ ПО МЕЖДУНАРОДНЫМ ОТНОШЕНИЯМ",textes: ["Теория международных отношений","Международные организации"],color:["#4800FF"]},
          {title:"ОЛИМПИАДЫ ПО ПОЛИТОЛОГИИ", textes: ["Политология","Политический анализ","Философия"],color:["#3548FF"]},
-         {title:"ОЛИМПИАДЫ ПО СОЦИОЛОГИИ", textes: ["В процессе"],color:"#FFFFFF"},
+         {title:"ОЛИМПИАДЫ ПО СОЦИОЛОГИИ", textes: ["В процессе разработки"],color:"#FFFFFF"},
 
        ],
     
@@ -28,7 +28,7 @@ export default {
          <div class="container">
         <div class="row content">
          <div class="col-12 tittle">
-            <span>КРУРСЫ</span>
+            КУРСЫ
          </div>
          <div class="col-12 search">
 
@@ -46,7 +46,7 @@ export default {
                </div>
                <div class="card-text">
                <ul  class="card-list">
-                  <li v-for="(card,index) in cards" :key="index.id"  >{{ card.textes[index] }}</li>
+                  <li v-for="(text,index) in card.textes" :key="index"  >{{ text }}</li>
                </ul>
             </div>
             </div>
@@ -67,13 +67,16 @@ export default {
    margin-bottom: 60px;
 }
 
+
+
 .tittle{
+   font-family: "MursGothic"; 
    margin-bottom: 35px;
+   font-size: 62px;
+   color: blue;
 }
 
-.card-tittle > li{
-    
-}
+
 .card{
    width: 712px;
    height: 370px;
@@ -96,15 +99,22 @@ export default {
 .card-list > li{
    font-size: 20px;
 line-height: 250%;
+position: relative;
+padding-left: 20px;
 }
-.card-list > li::after{
-   content: ' ';
-   position: relative;
-   left: -5;
-   width: 5px;
-   height: 5px;
-   background: white;
-   border-radius: 50%;
+.card-list > li::before{
+   content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 7px;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
 }
+
+
 
 </style>
