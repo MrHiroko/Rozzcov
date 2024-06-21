@@ -1,6 +1,9 @@
 <script>
+import MenuStr from 'src/components/MenuStr.vue';
 export default {
-
+   components:{
+    MenuStr,
+  },
   data(){
     return{
 
@@ -8,7 +11,7 @@ export default {
          {title:"ОЛИМПИАДЫ ПО ИСТОРИИ",textes: ["Отечественная история","Мировая история","Культура"],color:["#7800FF"]},
          {title:"ОЛИМПИАДЫ ПО МЕЖДУНАРОДНЫМ ОТНОШЕНИЯМ",textes: ["Теория международных отношений","Международные организации"],color:["#4800FF"]},
          {title:"ОЛИМПИАДЫ ПО ПОЛИТОЛОГИИ", textes: ["Политология","Политический анализ","Философия"],color:["#3548FF"]},
-         {title:"ОЛИМПИАДЫ ПО СОЦИОЛОГИИ", textes: ["В процессе разработки"],color:"#FFFFFF"},
+         {title:"ОЛИМПИАДЫ ПО СОЦИОЛОГИИ", textes: ["В процессе разработки"],color:["#FFFFFF"]},
 
        ],
     
@@ -21,8 +24,8 @@ export default {
 
 <template>
   <div class="row">
-      <div class="menu col-2">
-        menu
+      <div class="menu col-3">
+         <menu-str></menu-str>
       </div>
       <div class="col">
          <div class="container">
@@ -40,7 +43,7 @@ export default {
 
 
 
-            <div v-for="card in cards" :key="card.id" class="col-4 card"  :style="{background:card.color}" >
+            <div v-for="card in cards" :key="card.id" class="col-3 card"  :style="{background:card.color}" >
                <div class="card-tittle">
                   {{card.title}}
                </div>
