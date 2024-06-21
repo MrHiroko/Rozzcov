@@ -149,7 +149,7 @@ h6 {
     align-items: center;
     width: 286px;
     height: 100vh;
-    border-right: 2px solid black;
+    
 }
 
 .account_user {
