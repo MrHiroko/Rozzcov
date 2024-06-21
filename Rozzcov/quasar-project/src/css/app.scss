@@ -6,17 +6,8 @@
 }
 
 @font-face {
-	font-family: 'MursGothic'; 
-	src: url('/Rozzcov/quasar-project/src/assets/fonts/Murs Gothic/MursGothic-WideDark.ttf'); 
-}
-
-@font-face {
-   font-family: "MursGothic";
-   /* Браузер сначала попробует найти шрифт локально */
-   src: local("Murs"),
-        /* Если не получилось, загрузит woff2 */
-        url("/Rozzcov/quasar-project/src/assets/fonts/Murs Gothic/MursGothic-WideDark.ttf") format("ttf"),
-        /* Если браузер не поддерживает woff2, загрузит woff */
-       
+   font-family: 'Murs Gothic';
+   src: url('../assets/fonts/Murs Gothic/MursGothic-WideDark.ttf') format('ttf');
+   /* укажите путь и формат вашего загруженного файла шрифта */
  }
-
+ 

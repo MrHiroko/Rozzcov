@@ -5,12 +5,12 @@ export default {
     },
     data() {
         return {
-            menuNav: [{ title: "курсы", image: 'src/assets/img_MenuStr/kurs.svg' },
-            { title: "раписание", image: 'src/assets/img_MenuStr/schedule.svg' },
-            { title: "тесты", image: 'src/assets/img_MenuStr/tests.svg' },
-            { title: "статистика", image: 'src/assets/img_MenuStr/static.svg' },
-            { title: "наставничество", image: 'src/assets/img_MenuStr/mentoring.svg' },
-            { title: "поддержка", image: 'src/assets/img_MenuStr/support.svg' }],
+            menuNav: [{ title: "курсы", image: 'search' },
+            { title: "раписание", image: 'event' },
+            { title: "тесты", image: 'description' },
+            { title: "статистика", image: 'trending_up' },
+            { title: "наставничество", image: 'perm_identity' },
+            { title: "поддержка", image: 'question_answer' }],
         };
     },
 
@@ -27,116 +27,38 @@ export default {
 <template>
     <div class="menu_user">
         <div class="ro_logo">
-            <img src="src/assets/img_MenuStr/Group_1.svg" width="143px" height="35px">
+            <img src="../assets/img/Group 1.png" width="143px" height="35px">
         </div>
+        <div class="container">
         <div class="account_user">
-            <img src="src/assets/img_MenuStr/M.svg" width="40px" height="40px">
+            <img src="../assets/img/Group 5.png" width="40px" height="40px">
             <div class="account_user_text">Мишанов Е.А.</div>
-            <img src="src/assets/img_MenuStr/exit.svg" width="19px" height="19px">
+            <q-icon name="logout" />
         </div>
+        <div class="menu">
         <nav class="nav_menu">
             <ul>
-                <li class="nav_li" v-for="item in menuNav" :key="item.id"><button><img class="nav_img"
-                            :src="item.image"><span>{{ item.title }}</span></button></li>
+                <li class="nav_li" v-for="item in menuNav" :key="item.id"><button><q-icon :name="item.image"/><span>{{ item.title }}</span></button></li>
             </ul>
         </nav>
+    </div>
         <div class="social_media">
-            <div class="social_media_youtube"><img src="src/assets/img_MenuStr/youtube.svg"></div>
-            <div class="social_media_vk"><img src="src/assets/img_MenuStr/vk.svg"></div>
+            <div class="social_media_youtube"><img src="src/assets/icons/youtube.svg"></div>
+            <div class="social_media_vk"><img src="src/assets/icons/vk.svg"></div>
         </div>
+    </div>
     </div>
 </template>
 
 <style>
-* {
-    padding: 0;
-    margin: 0;
-    border: 0;
-}
+.menu{
+    position: relative;
+    display: flex;
 
-*,
-*:before,
-*:after {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-:focus,
-:active {
-    outline: none;
-}
-
-a:focus,
-a:active {
-    outline: none;
-}
-
-nav,
-footer,
-header,
-aside {
-    display: block;
-}
-
-html,
-body {
+    flex: 1 0 auto;
     height: 100%;
-    width: 100%;
-    font-size: 100%;
-    line-height: 1;
-    font-size: 14px;
-    -ms-text-size-adjust: 100%;
-    -moz-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
 }
 
-input,
-button,
-textarea {
-    font-family: inherit;
-}
-
-input::-ms-clear {
-    display: none;
-}
-
-button {
-    cursor: pointer;
-}
-
-button::-moz-focus-inner {
-    padding: 0;
-    border: 0;
-}
-
-a,
-a:visited {
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: none;
-}
-
-ul li {
-    list-style: none;
-}
-
-img {
-    vertical-align: top;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-size: inherit;
-    font-weight: inherit;
-}
-
-/*--------------------*/
 .ro_logo {
     text-align: center;
     padding-top: 38px;
@@ -197,12 +119,15 @@ h6 {
 
 
 .social_media {
+    position: absolute;
     margin-top: 140%;
     width: 80px;
     height: 30px;
     display: flex;
     gap: 15px;
     align-items: center;
+    bottom: 20px;
+    right: 30%;
     
 }
 </style>

@@ -20,11 +20,13 @@ export default {
 
 }
 
+
+
 </script>
 
 <template>
   <div class="row">
-      <div class="menu col-3">
+      <div class="menu col-2">
          <menu-str></menu-str>
       </div>
       <div class="col">
@@ -36,7 +38,12 @@ export default {
          <div class="col-12 search">
 
 
-           <q-input   class='search-input'  rounded outlined v-model="text" label="Нажмите чтобы начать поиск" />
+            <q-input rounded outlined  bottom-slots v-model="text" label="Нажмите, чтобы начать поиск" >
+        <template v-slot:prepend>
+         <q-icon name="search" />
+        </template>
+
+      </q-input>
 
            
          </div>
@@ -65,15 +72,12 @@ export default {
 
 <style scoped>
 
-.search-input {
-   height: 30px;
-   margin-bottom: 60px;
-}
 
 
 
 .tittle{
-   font-family: "MursGothic"; 
+   font-family: 'Murs Gothic', sans-serif;
+   font-weight: bold;
    margin-bottom: 35px;
    font-size: 62px;
    color: blue;

@@ -1,4 +1,5 @@
 <script>
+
 import AppKurs from '../src/components/app-kurs.vue';
 export default {
   components:{
