@@ -63,7 +63,7 @@ export default {
 
 <style >
 .menu_burger{
-    color: #0000FF;
+    color: blue;
 }
 
 .menu_full{
