@@ -42,7 +42,7 @@ export default {
         <div class="container">
         <div class="account_user">
             <img src="src/assets/img/avatar.png" width="40px" height="40px">
-            <div class="account_user_text">Мишанов Е.А.</div>
+            <div class="account_user_text"><a href="https://www.youtube.com/">Мишанов Е.А.</a></div>
             <q-icon name="logout" />
         </div>
         <div class="menu">

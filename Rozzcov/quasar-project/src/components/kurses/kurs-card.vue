@@ -1,4 +1,5 @@
 <script>
+
 export default {
 
   data(){
@@ -20,6 +21,7 @@ export default {
 <template>
 
 <div class="row cards">
+
             <div v-for="card in cards" :key="card.id" class="col-3 card"  :style="{background:card.color}" >
                <div class="card-tittle">
                   {{card.title}}

@@ -1,14 +1,7 @@
 <script>
-import MenuStr from './components/kurses/MenuStr.vue';
-import KursCard from './components/kurses/kurs-card.vue';
-
-
 
 export default {
   components:{
-    KursCard,
-    MenuStr,
-
 
   },
   data(){
@@ -35,15 +28,15 @@ methods: {
       <div class="col">
 
         <div class="row content">
-  
+        
 
           <div class="col-12">
-            <app-kurs></app-kurs>
+        
 
           </div>
 <div class="col-12">
   
-  <kurs-card></kurs-card>
+
 
          
 </div>
