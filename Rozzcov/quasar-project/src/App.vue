@@ -1,14 +1,14 @@
 <script>
 import MenuStr from './components/kurses/MenuStr.vue';
 import KursCard from './components/kurses/kurs-card.vue';
-
+import AppKurs from './components/kurses/app-kurs.vue'
 
 
 export default {
   components:{
     KursCard,
     MenuStr,
-
+    AppKurs,
 
   },
   data(){
