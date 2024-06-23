@@ -66,14 +66,7 @@ export default {
     color: blue;
 }
 
-.menu_full{
-    position: relative;
-    display: flex;
 
-    flex: 1 0 auto;
-    height: 100%;
-
-}
 
 .ro_logo {
     text-align: center;
@@ -132,10 +125,15 @@ export default {
     color: white;
 }
 
-.menu_user{
-    position: relative;
-}
 
+.menu_full{
+    position: relative;
+    display: flex;
+
+    flex: 1 0 auto;
+    height: 100%;
+
+}
 .social_media {
     position: absolute;
     margin-top: 140%;
@@ -144,8 +142,7 @@ export default {
     display: flex;
     gap: 15px;
     align-items: center;
-    bottom: 0px;
-    right: 30%;
+    bottom: 20px;
     
 }
 .active{
