@@ -5,13 +5,16 @@ export default {
     },
     data() {
         return {
+            isTrue: true,
             menuNav: [{ title: "курсы", image: 'search' },
             { title: "раписание", image: 'event' },
             { title: "тесты", image: 'description' },
             { title: "статистика", image: 'trending_up' },
             { title: "наставничество", image: 'perm_identity' },
             { title: "поддержка", image: 'question_answer' }],
+          
         };
+ 
     },
 
     mounted() {
@@ -19,19 +22,26 @@ export default {
     },
 
     methods: {
-
+        toggleValue() {
+      this.isTrue = !this.isTrue;
+    }
     },
 };
 </script>
 
 <template>
+   
+   <q-toolbar class="text-primary">
+      <q-btn  @click="toggleValue" class="menu_burger" flat round dense icon="menu" />
+    </q-toolbar>
+<div :class="{active: isTrue}" class="menu_full">
     <div class="menu_user">
         <div class="ro_logo">
-            <img src="../assets/img/Group 1.png" width="143px" height="35px">
+            <img src="src/assets/img/logo.png" width="143px" height="35px">
         </div>
         <div class="container">
         <div class="account_user">
-            <img src="../assets/img/Group 5.png" width="40px" height="40px">
+            <img src="src/assets/img/avatar.png" width="40px" height="40px">
             <div class="account_user_text">Мишанов Е.А.</div>
             <q-icon name="logout" />
         </div>
@@ -48,15 +58,21 @@ export default {
         </div>
     </div>
     </div>
+</div>
 </template>
 
-<style>
-.menu{
+<style >
+.menu_burger{
+    color: #0000FF;
+}
+
+.menu_full{
     position: relative;
     display: flex;
 
     flex: 1 0 auto;
     height: 100%;
+
 }
 
 .ro_logo {
@@ -116,7 +132,9 @@ export default {
     color: white;
 }
 
-
+.menu_user{
+    position: relative;
+}
 
 .social_media {
     position: absolute;
@@ -126,8 +144,11 @@ export default {
     display: flex;
     gap: 15px;
     align-items: center;
-    bottom: 20px;
+    bottom: 0px;
     right: 30%;
     
+}
+.active{
+display: none;
 }
 </style>

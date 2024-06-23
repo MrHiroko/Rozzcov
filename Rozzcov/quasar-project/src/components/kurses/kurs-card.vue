@@ -1,9 +1,6 @@
 <script>
-import MenuStr from 'src/components/MenuStr.vue';
 export default {
-   components:{
-    MenuStr,
-  },
+
   data(){
     return{
 
@@ -18,38 +15,11 @@ export default {
     };
   }
 
-}
-
-
-
+};
 </script>
-
 <template>
-  <div class="row">
-      <div class="menu col-2">
-         <menu-str></menu-str>
-      </div>
-      <div class="col">
-         <div class="container">
-        <div class="row content">
-         <div class="col-12 tittle">
-            КУРСЫ
-         </div>
-         <div class="col-12 search">
 
-
-            <q-input rounded outlined  bottom-slots v-model="text" label="Нажмите, чтобы начать поиск" >
-        <template v-slot:prepend>
-         <q-icon name="search" />
-        </template>
-
-      </q-input>
-
-           
-         </div>
-
-
-
+<div class="row cards">
             <div v-for="card in cards" :key="card.id" class="col-3 card"  :style="{background:card.color}" >
                <div class="card-tittle">
                   {{card.title}}
@@ -61,12 +31,8 @@ export default {
             </div>
             </div>
     
-         
+
          </div>
-        </div>
-      </div>
-      </div>
-    
  </template>  
 
 
@@ -75,14 +41,10 @@ export default {
 
 
 
-.tittle{
-   font-family: 'Murs Gothic', sans-serif;
-   font-weight: bold;
-   margin-bottom: 35px;
-   font-size: 62px;
-   color: blue;
-}
-
+/*.cards{
+   display: flex;
+   flex-wrap: wrap;
+}*/
 
 .card{
    width: 712px;
