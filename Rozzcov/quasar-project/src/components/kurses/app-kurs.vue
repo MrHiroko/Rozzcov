@@ -19,7 +19,7 @@ export default {
 </script>
 
 <template>
-
+<header>
         <div class="row content">
          <div class="col-12 tittle">
             КУРСЫ
@@ -43,7 +43,7 @@ export default {
          
          </div>
 
-    
+      </header>
  </template>  
 
 

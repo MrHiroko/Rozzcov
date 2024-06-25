@@ -1,6 +1,6 @@
 import { route } from 'quasar/wrappers'
 import { createRouter, createMemoryHistory, createWebHistory, createWebHashHistory } from 'vue-router'
-
+import routes from './routes'
 
 /*
  * If not building with SSR mode, you can
@@ -10,10 +10,6 @@ import { createRouter, createMemoryHistory, createWebHistory, createWebHashHisto
  * async/await or return a Promise which resolves
  * with the Router instance.
  */
-
-
-
-
 
 export default route(function (/* { store, ssrContext } */) {
   const createHistory = process.env.SERVER

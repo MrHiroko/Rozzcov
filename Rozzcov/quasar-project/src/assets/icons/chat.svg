@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500">
+  <defs>
+    <style>
+      .cls-1 {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <g id="chat">
+    <path id="Прямоугольник_10" data-name="Прямоугольник 10" class="cls-1" d="M3053,0h394a53,53,0,0,1,53,53V311a53,53,0,0,1-53,53H3053a53,53,0,0,1-53-53V53A53,53,0,0,1,3053,0Zm14,364h211.01L3067.49,500H3067V364Z" transform="translate(-3000)"/>
+  </g>
+</svg>

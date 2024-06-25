@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500">
+  <defs>
+    <style>
+      .cls-1 {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <g id="rouble">
+    <path id="Прямоугольник_590_копия" data-name="Прямоугольник 590 копия" class="cls-1" d="M1304,1800h71v502h-71V1800Zm71,0h212.99a112,112,0,0,1,112,112v77.98a112,112,0,0,1-112,112H1375V1800Zm1.01,70.01h200a60,60,0,0,1,60,60v42a60,60,0,0,1-60,60h-200v-162ZM1219,2032h157v70H1219v-70Zm3,132h300v70H1222v-70Z" transform="translate(-1200 -1800)"/>
+    <rect id="Прямоугольник_589" data-name="Прямоугольник 589" x="104" y="162" width="72" height="338"/>
+  </g>
+</svg>

@@ -30,14 +30,14 @@ export default {
 </script>
 
 <template>
-   
+   <aside>
    <q-toolbar class="text-primary">
       <q-btn  @click="toggleValue" class="menu_burger" flat round dense icon="menu" />
     </q-toolbar>
 <div :class="{active: isTrue}" class="menu_full">
     <div class="menu_user">
         <div class="ro_logo">
-            <img src="src/assets/img/logo.png" width="143px" height="35px">
+            <img src="src/assets/img/RO_main_logo.svg" width="143px" height="35px">
         </div>
         <div class="container">
         <div class="account_user">
@@ -59,6 +59,7 @@ export default {
     </div>
     </div>
 </div>
+</aside>
 </template>
 
 <style >
