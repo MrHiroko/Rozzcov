@@ -1,18 +1,21 @@
+
 const routes = [
-   {
-     path: '/',
-     component: () => import('layouts/MainLayout.vue'),
-     children: [
-       { path: '', component: () => import('pages/IndexPage.vue') }
-     ]
-   },
- 
-   // Always leave this as last one,
-   // but you can also remove it
-   {
-     path: '/:catchAll(.*)*',
-     component: () => import('pages/ErrorNotFound.vue')
-   }
- ]
- 
- export default routes
+  {
+    path: '/',
+    component: () => import('layouts/quick-menu.vue'),
+    children: [
+      { path: '', component: () => import('pages/courses-app.vue') }
+    ]
+  },
+  {
+    path: '/',
+    component: () => import('layouts/quick-menu.vue'),
+    children: [
+      { path: '/courseApp', component: () => import('pages/course-app.vue') },
+      { path: '/videoApp', component: () => import('pages/video-app.vue') }
+    ]
+  },
+
+]
+
+export default routes
