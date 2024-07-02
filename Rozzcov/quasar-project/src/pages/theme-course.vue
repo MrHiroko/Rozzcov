@@ -56,7 +56,7 @@ methods: {
 <div v-for="item in video" :key="item" class=" card  row wrap justify-between items-center content-center">
 
    <div class="title-block">{{ item.title }}</div>
-   <div class="time">{{item.time}} <q-btn icon="play_arrow" class="button">{{item.button}}</q-btn></div>
+   <div class="time">{{item.time}} <q-btn @click="$router.push('/videoApp')" icon="play_arrow" class="button">{{item.button}}</q-btn></div>
 
 </div>
 
@@ -68,7 +68,7 @@ methods: {
 <div v-for="item in tests" :key="item" class=" test  row wrap justify-between items-center content-center">
 
    <div class="title-block">{{ item.title }}</div>
-   <div class="time">{{item.work}} <q-btn icon="play_arrow" class="button">{{item.button}}</q-btn></div>
+   <div class="time">{{item.work}} <q-btn  icon="play_arrow" class="button">{{item.button}}</q-btn></div>
 
 </div>
 

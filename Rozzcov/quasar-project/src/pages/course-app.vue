@@ -117,8 +117,8 @@ methods: {
         бесплатно
        </q-span>
       </q-card-section>
-      <q-section class="card-main-path">
-      <q-span class="card-main-bg">
+      <q-section @click="$router.push('/videoApp')"  class="card-main-path">
+      <q-span  class="card-main-bg">
         <svg xmlns="http://www.w3.org/2000/svg" width="34" height="35" viewBox="0 0 500 500">
   <defs>
   </defs>
@@ -126,7 +126,7 @@ methods: {
     <path fill="white" id="Прямоугольник_588" data-name="Прямоугольник 588" class="cls-1" d="M106,0H441V500H106a46,46,0,0,1-46-46V46A46,46,0,0,1,106,0Zm20,418H441v43H126a21,21,0,0,1-21-21v-1A21,21,0,0,1,126,418Z"/>
   </g>
 </svg> </q-span>
-<q-span class="card-text">Нажмите, чтобы <br> перейти к блокам</q-span>
+<q-span class="card-text" >Нажмите, чтобы <br> перейти к блокам</q-span>
      
     </q-section>
     <q-section class="card-procent">65%</q-section>
