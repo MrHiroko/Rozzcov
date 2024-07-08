@@ -19,6 +19,7 @@ const routes = [
       { path: '/test', component: () => import('pages/test-app.vue') },
       { path: '/support', component: () => import('pages/support-app.vue') },
       { path: '/tutor-choice', component: () => import('pages/tutor-choice.vue') },
+      { path: '/settings', component: () => import('pages/SettingsAccount.vue') },
     ]
   },
 

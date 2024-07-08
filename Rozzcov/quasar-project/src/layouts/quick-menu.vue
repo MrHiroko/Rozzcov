@@ -105,7 +105,7 @@ export default {
         <div class="account_user">
             <img src="src/assets/img/avatar.png" width="40px" height="40px">
             <div class="account_user_text">Мишанов Е.А.</div>
-            <img src="src/assets/icons/settings.svg" width="16px" alt="">
+            <router-link to="/settings"><img src="src/assets/icons/settings.svg" width="16px" alt=""></router-link>
             <img src="src/assets/icons/lock.svg" width="16px" alt="">
         </div>
         <div class="menu">
