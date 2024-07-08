@@ -6,10 +6,10 @@ export default{
    data(){
       return{
          cards: [
-         {title:"ИСТОРИЯ",persent: "36%",bg:["#7800FF"], color:["#ffffff"]},
-         {title:"МЕЖДУНАРОНЫЕ ОТНОШЕНИЯ",persent: "36%", bg:["#4800FF"], color:["#ffffff"]},
-         {title:"ПОЛИТОЛОГИЯ", persent: "36%",bg:["#3548FF"], color:["#ffffff"]},
-         {title:"СОЦИОЛОГИЯ", persent: "36%",bg:["#FFFFFF"], color:["#737373"]},
+         {title:"ОТЕЧЕСТВЕННАЯ ИСТОРИЯ",persent: "36%",bg:["#7800FF"], color:["#ffffff"]},
+         {title:"МИРОВАЯ ИСТОРИЯ",persent: "36%", bg:["#4800FF"], color:["#ffffff"]},
+         {title:"КУЛЬТУРА", persent: "36%",bg:["#3548FF"], color:["#ffffff"]},
+
         
        ],
 
@@ -30,7 +30,7 @@ methods: {
 <template>
    <div class="row">
       <div class="col-12 title">
-       ТЕСТЫ
+       ТЕСТЫ > ИСТОРИЯ
 </div>
 <div class="col-12">
    <q-input rounded outlined  bottom-slots v-model="text" label="Нажмите, чтобы начать поиск" >
@@ -44,7 +44,7 @@ methods: {
 </div>
 <div class="col-12 row content">
 
-   <q-card @click="$router.push('/test')"    v-for="card in cards" :key="card.id" class="col-5 card row  "  :style="{background:card.bg, color:card.color}" >
+   <q-card    v-for="card in cards" :key="card.id" class="col-5 card row  "  :style="{background:card.bg, color:card.color}" >
 
 <div class="card-tittle col-12">
    

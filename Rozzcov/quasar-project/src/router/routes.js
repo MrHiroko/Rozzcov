@@ -16,6 +16,9 @@ const routes = [
       { path: '/themeCourse', component: () => import('pages/theme-course.vue') },
       { path: '/tests', component: () => import('pages/tests-app.vue') },
       { path: '/tutorship', component: () => import('pages/tutorship-app.vue') },
+      { path: '/test', component: () => import('pages/test-app.vue') },
+      { path: '/support', component: () => import('pages/support-app.vue') },
+      { path: '/tutor-choice', component: () => import('pages/tutor-choice.vue') },
     ]
   },
 
