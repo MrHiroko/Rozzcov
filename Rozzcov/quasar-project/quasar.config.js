@@ -30,7 +30,7 @@ module.exports = configure(function (/* ctx */) {
     css: [
       'app.scss',
       'reset.scss',
-  
+      
     ],
 
     // https://github.com/quasarframework/quasar/tree/dev/extras
