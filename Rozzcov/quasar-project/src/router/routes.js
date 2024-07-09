@@ -19,6 +19,10 @@ const routes = [
       { path: '/test', component: () => import('pages/test-app.vue') },
       { path: '/support', component: () => import('pages/support-app.vue') },
       { path: '/tutor-choice', component: () => import('pages/tutor-choice.vue') },
+      { path: '/test-task-1', component: () => import('pages/task/test-task-1.vue') },
+      { path: '/test-task-2', component: () => import('pages/task/test-task-2.vue') },
+      { path: '/test-task-3', component: () => import('pages/task/test-task-3.vue') },
+      { path: '/test-task-4', component: () => import('pages/task/test-task-4.vue') },
       { path: '/settings', component: () => import('pages/SettingsAccount.vue') },
     ]
   },

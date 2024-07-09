@@ -44,7 +44,7 @@ methods: {
 </div>
 <div class="col-12 row content">
 
-   <q-card    v-for="card in cards" :key="card.id" class="col-5 card row  "  :style="{background:card.bg, color:card.color}" >
+   <q-card @click="$router.push('/test-task-1')"   v-for="card in cards" :key="card.id" class="col-5 card row  "  :style="{background:card.bg, color:card.color}" >
 
 <div class="card-tittle col-12">
    
