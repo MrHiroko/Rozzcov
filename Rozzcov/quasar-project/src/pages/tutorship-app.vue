@@ -45,7 +45,7 @@ export default {
 </template>
 
 
-<style>
+<style scoped>
 .title {
     font-family: 'Murs Gothic', sans-serif;
     font-weight: bold;
