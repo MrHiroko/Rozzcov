@@ -35,7 +35,7 @@ export default {
 
         </ul>
         <div class="button_block">
-            <button class='subscribe_btn'>нажмите, чтобы оформить подписку</button><br>
+            <button class='subscribe_btn' @click="$router.push('/settings')">нажмите, чтобы оформить подписку</button><br>
             <button @click="$router.push('/tutor-choice')"  class='tutorship_btn'>нажмите, чтобы выбрать наставникa</button>
         </div>
         <div class="img_people_block">
