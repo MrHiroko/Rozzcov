@@ -117,7 +117,7 @@ methods: {
         бесплатно
        </q-span>
       </q-card-section>
-      <q-section @click="$router.push('/videoApp')"  class="card-main-path">
+      <q-section @click="$router.push('/themeCourse')"  class="card-main-path">
       <q-span  class="card-main-bg">
         <svg xmlns="http://www.w3.org/2000/svg" width="34" height="35" viewBox="0 0 500 500">
   <defs>
