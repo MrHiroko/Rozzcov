@@ -24,6 +24,7 @@ const routes = [
       { path: '/test-task-3', component: () => import('pages/task/test-task-3.vue') },
       { path: '/test-task-4', component: () => import('pages/task/test-task-4.vue') },
       { path: '/settings', component: () => import('pages/SettingsAccount.vue') },
+      { path: '/politicaltextbook', component: () => import('pages/PoliticalTextbook.vue') },
     ]
   },
 

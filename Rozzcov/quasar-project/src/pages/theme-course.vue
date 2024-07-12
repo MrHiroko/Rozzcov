@@ -121,7 +121,7 @@ methods: {
 <div v-for="item in video" :key="item" class=" card  row wrap justify-between items-center content-center">
 
    <div class="title-block">{{ item.title }}</div>
-   <div class="time">{{item.time}} <q-btn @click="$router.push('/videoApp')"  class="button"><svg width="20" height="20" viewBox="0 0 500 500"  v-html="item.icon"></svg>{{item.button}}</q-btn></div>
+   <div class="time">{{item.time}} <q-btn @click="$router.push('/politicaltextbook')"  class="button"><svg width="20" height="20" viewBox="0 0 500 500"  v-html="item.icon"></svg>{{item.button}}</q-btn></div>
 
 </div>
 
