@@ -18,16 +18,16 @@
             </q-input>
         </div>
         <div class="col-12">
-            <q-span class="textbook_title">УЧБЕНИК ПО ПОЛИТОЛОГИИ</q-span>
+            <q-span class="textbook_title">УЧБЕНИК ПО МЕЖДУНАРОДНЫМ ОРГАНИЗАЦИЯМ</q-span>
         </div>
-        <div class="col-12 information_block d-flex">
-            <div class="col-6 information_text">
+        <div class="row information_block fit row wrap justify-between items-center content-start">
+            <div class="col-8 information_text">
                 <p class="information_source">Информация взята из следующих источников:</p>
                 <p>«Политология 11 класс» Р.Д Рубцовский (2014)</p>
                 <p>«Политика ХХ века» Г.М Синицын (2007)</p>
             </div>
-            <div class="col-6 downoload_block">
-                <q-btn class="button_downoload"><img src="src/assets/icons/icons8-стрелка-80.svg" height="10px" width="50px">cкачать / .zip (7,9 МБ)</q-btn>
+            <div class="col-4 downoload_block">
+                <q-btn class="button_downoload">cкачать / .pdf (7,9 МБ)</q-btn>
             </div>
         </div>
     </div>
@@ -65,7 +65,7 @@
     font-weight: normal;
     font-family: "Geist Variable";
     margin-top: 10px;
-    
+   
 }
 
 .information_source {
@@ -75,10 +75,7 @@
 
 .information_block {}
 
-.downoload_block{
-    height: 62px;
-    width: 500px;
-}
+
 
 .button_downoload {
     width: 375px;
