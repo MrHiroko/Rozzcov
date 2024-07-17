@@ -33,7 +33,7 @@ methods: {
        ТЕСТЫ > ИСТОРИЯ
 </div>
 <div class="col-12">
-   <q-input rounded outlined  bottom-slots v-model="text" label="Нажмите, чтобы начать поиск" >
+   <q-input rounded outlined dense bottom-slots v-model="text" label="Нажмите, чтобы начать поиск" >
         <template v-slot:prepend>
          <q-icon name="search" />
         </template>
@@ -64,14 +64,13 @@ methods: {
 </template>
 
 <style scoped>
-.title{
+.title {
    font-family: 'Murs Gothic', sans-serif;
    font-weight: bold;
    margin-bottom: 35px;
-   font-size: 1.8vw;
+   font-size: 4vw;
    color: blue;
    font-family: 'Murs-Gothic';
-
 }
 
 .card{
@@ -90,7 +89,87 @@ methods: {
    position: relative;
    bottom: 30px;
 }
-
+@media (min-width:320px) and (max-width:374px){
+   .content{
+      justify-content: center;
+      
+   }
+   .card{
+      width: 300px;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      
+   }
+   .card-tittle{
+      font-size: 0.9rem;
+   }
+   .card-persent{
+      position: absolute;
+      right:20px;
+      bottom:10px;
+   }
+}
+@media (min-width:375px) and (max-width:424px){
+   .content{
+      justify-content: center;
+      
+   }
+   .card{
+      width: 350px;
+      height: 120px;
+      display: flex;
+      align-items: center;
+      
+   }
+   .card-tittle{
+      font-size: 1.2rem;
+   }
+   .card-persent{
+      position: absolute;
+      right:20px;
+      bottom:10px;
+   }
+}
+@media (min-width:425px) and (max-width:767px){
+   .content{
+      justify-content: center;
+      
+   }
+   .card{
+      width: 400px;
+      height: 140px;
+      display: flex;
+      align-items: center;
+      
+   }
+   .card-tittle{
+      font-size: 1.4rem;
+   }
+   .card-persent{
+      position: absolute;
+      right:20px;
+      bottom:10px;
+   }
+}
+@media (min-width:768px) and (max-width:1023px){
+   .content{
+      justify-content: center;
+      
+   }
+}
+@media (min-width:1024px) and (max-width:1439px){
+   .content{
+      justify-content: center;
+      
+   }
+}
+@media (min-width:1400px) and (max-width:1692px){
+   .content{
+      justify-content: center;
+      
+   }
+}
 
 
 </style>
