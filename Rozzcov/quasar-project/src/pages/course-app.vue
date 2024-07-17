@@ -50,7 +50,7 @@ methods: {
          <div class="col-12 search">
 
 
-            <q-input rounded outlined  bottom-slots v-model="text" label="Нажмите, чтобы начать поиск" >
+            <q-input rounded outlined dense bottom-slots v-model="text" label="Нажмите, чтобы начать поиск" >
         <template v-slot:prepend>
          <q-icon name="search" />
         </template>
@@ -72,7 +72,7 @@ methods: {
 <div class="col-12">
   
   <main class="main">
-   <div class="row wrap justify-start items-start content-start">
+   <div class="card_block  row wrap justify-start items-start content-start">
    
       <q-card class="my-card big">
         <q-span class="card-recomend">рекомендуется</q-span>
@@ -236,37 +236,73 @@ margin-right: 30px;
    color: blue;
    font-family: 'Murs-Gothic';
 }
-
-
-@media  (min-width: 320px) {
-
- }
-
- @media  (min-width: 375px) and (max-width: 425px) {
-
- }
-
- @media  (min-width: 425px) and (max-width: 768px) {
-
- }
-
- @media  (min-width: 768px) and (max-width: 1024px) {
-
- }
-
- @media  (min-width: 1024px) and (max-width: 1440px) {
-
-
- }
-
- @media  (min-width: 1440px) and (max-width: 1920px) {
-
- }
-
- @media  screen and (min-width: 1920px)  {
-
- }
-
-
-
+@media (min-width:320px) and (max-width:375px){
+  .my-card{
+    width: 300px;
+    left:-19px;
+    position: relative;
+  }
+  .big{
+    height: 450px;
+  }
+  .card-title-text{
+    font-size: 1.5rem;
+    
+  }
+  .card_block{
+    position: relative;
+  }
+  .card-main{
+    width: 250px;
+    margin-left: -53px;
+  }
+}
+@media (min-width:376px) and (max-width:425px){
+  .my-card{
+    width: 320px;
+    left:-11px;
+    position: relative;
+  }
+  .big{
+    height: 470px;
+  }
+  .card-title-text{
+    font-size: 1.5rem;
+    
+  }
+  .card_block{
+    position: relative;
+    
+   
+    
+  }
+  .card-main{
+    width: 270px;
+    margin-left: -53px;
+  }
+}
+@media (min-width:426px) and (max-width:768px){
+  .my-card{
+    width: 400px;
+    left:-19px;
+    position: relative;
+  }
+  .big{
+    height: 500px;
+  }
+  .card-title-text{
+    font-size: 1.8rem;
+    
+  }
+  .card_block{
+    position: relative;
+    
+   
+    
+  }
+  .card-main{
+    width: 300px;
+    margin-left: -53px;
+  }
+}
 </style>
