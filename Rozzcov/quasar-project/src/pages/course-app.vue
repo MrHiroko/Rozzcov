@@ -72,7 +72,7 @@ methods: {
 <div class="col-12">
   
   <main class="main">
-   <div class="card_block  row wrap justify-start items-start content-start">
+   <div class="row wrap justify-start items-start content-start">
    
       <q-card class="my-card big">
         <q-span class="card-recomend">рекомендуется</q-span>
