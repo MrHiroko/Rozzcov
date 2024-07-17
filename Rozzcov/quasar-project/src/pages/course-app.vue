@@ -237,4 +237,36 @@ margin-right: 30px;
    font-family: 'Murs-Gothic';
 }
 
+
+@media  (min-width: 320px) {
+
+ }
+
+ @media  (min-width: 375px) and (max-width: 425px) {
+
+ }
+
+ @media  (min-width: 425px) and (max-width: 768px) {
+
+ }
+
+ @media  (min-width: 768px) and (max-width: 1024px) {
+
+ }
+
+ @media  (min-width: 1024px) and (max-width: 1440px) {
+
+
+ }
+
+ @media  (min-width: 1440px) and (max-width: 1920px) {
+
+ }
+
+ @media  screen and (min-width: 1920px)  {
+
+ }
+
+
+
 </style>

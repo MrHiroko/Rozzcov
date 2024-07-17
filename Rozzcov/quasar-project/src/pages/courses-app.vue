@@ -33,12 +33,13 @@ methods: {
 
 </script>
 <template>
+   
 <div class="row-3">
 <div class="col tittle">
 Курсы
 </div>
 <div class="col">
-   <q-input rounded outlined  bottom-slots v-model="text" label="Нажмите, чтобы начать поиск" >
+   <q-input dense rounded outlined  bottom-slots v-model="text" label="Нажмите, чтобы начать поиск" >
         <template v-slot:prepend>
          <q-icon name="search" />
         </template>
@@ -50,7 +51,7 @@ methods: {
 
    <div class="row  cards" >
     
-   <q-card @click="$router.push('/courseApp')"   v-for="card in cards" :key="card.id" class="col-5 card"  :style="{background:card.bg, color:card.color}" >
+   <q-card @click="$router.push('/courseApp')"   v-for="card in cards" :key="card.id" class="  wrap justify-center items-center content-center col-6   card"  :style="{background:card.bg, color:card.color}" >
 
       <div class="card-tittle">
          
@@ -83,18 +84,16 @@ methods: {
 
 
  <style scoped>
-
-.card{
+ .card{
    width: 712px;
    height: 370px;
    border-radius: 30px;
-   padding: 48px;
+   padding: 40px;
    margin: 20px;
    outline: 1px solid #000000;
    color:#ffffff;
+   
 }
-
-
 
 .card-tittle{
    font-size: 50px;
@@ -106,6 +105,15 @@ line-height: 250%;
 position: relative;
 padding-left: 20px;
 }
+.tittle{
+   font-family: 'Murs Gothic', sans-serif;
+   font-weight: bold;
+   margin-bottom: 35px;
+   font-size: 30px;
+   color: blue;
+   font-family: 'Murs-Gothic';
+}
+
 .card-list > li::before{
    content: '';
   display: block;
@@ -125,12 +133,230 @@ padding-left: 20px;
 
 }
 
+ @media  (min-width: 320px) {
+   .card{
+   width: 290px;
+   height: 250px;
+   border-radius: 30px;
+   padding: 20px;
+   margin: 20px;
+   outline: 1px solid #000000;
+   color:#ffffff;
+   
+}
+.card-tittle{
+   font-size: 20px;
+   line-height: 140%;
+}
+.card-list > li{
+   font-size: 14px;
+line-height: 200%;
+position: relative;
+padding-left: 20px;
+}
 .tittle{
    font-family: 'Murs Gothic', sans-serif;
    font-weight: bold;
    margin-bottom: 35px;
-   font-size: 4vw;
+   font-size: 20px;
    color: blue;
    font-family: 'Murs-Gothic';
 }
+ }
+
+ @media  (min-width: 375px) and (max-width: 425px) {
+   .card{
+   width: 340px;
+   height: 220px;
+   border-radius: 30px;
+   
+   margin: 20px;
+   outline: 1px solid #000000;
+   color:#ffffff;
+   
+}
+.card-tittle{
+   font-size: 16px;
+   line-height: 140%;
+}
+.card-list > li{
+   font-size: 14px;
+line-height: 250%;
+position: relative;
+padding-left: 20px;
+}
+.tittle{
+   font-family: 'Murs Gothic', sans-serif;
+   font-weight: bold;
+   margin-bottom: 35px;
+   font-size: 30px;
+   color: blue;
+   font-family: 'Murs-Gothic';
+}
+ }
+
+ @media  (min-width: 425px) and (max-width: 768px) {
+   .card{
+   width: 400px;
+   height: 220px;
+   border-radius: 30px;
+   
+   margin: 20px;
+   outline: 1px solid #000000;
+   color:#ffffff;
+   
+}
+.card-tittle{
+   font-size: 24px;
+   line-height: 140%;
+}
+.card-list > li{
+   font-size: 14px;
+line-height: 250%;
+position: relative;
+padding-left: 20px;
+}
+.tittle{
+   font-family: 'Murs Gothic', sans-serif;
+   font-weight: bold;
+   margin-bottom: 35px;
+   font-size: 30px;
+   color: blue;
+   font-family: 'Murs-Gothic';
+}
+ }
+
+ @media  (min-width: 768px) and (max-width: 1024px) {
+   .card{
+   width: 344px;
+   height: 220px;
+   border-radius: 30px;
+   
+   margin: 20px;
+   outline: 1px solid #000000;
+   color:#ffffff;
+   
+}
+.card-tittle{
+   font-size: 24px;
+   line-height: 140%;
+}
+.card-list > li{
+   font-size: 14px;
+line-height: 250%;
+position: relative;
+padding-left: 20px;
+}
+.tittle{
+   font-family: 'Murs Gothic', sans-serif;
+   font-weight: bold;
+   margin-bottom: 35px;
+   font-size: 30px;
+   color: blue;
+   font-family: 'Murs-Gothic';
+}
+ }
+
+ @media  (min-width: 1024px) and (max-width: 1440px) {
+   .card{
+   width: 470px;
+   height: 220px;
+   border-radius: 30px;
+   
+   margin: 20px;
+   outline: 1px solid #000000;
+   color:#ffffff;
+   
+}
+.card-tittle{
+   font-size: 24px;
+   line-height: 140%;
+}
+.card-list > li{
+   font-size: 18px;
+line-height: 250%;
+position: relative;
+padding-left: 20px;
+}
+.tittle{
+   font-family: 'Murs Gothic', sans-serif;
+   font-weight: bold;
+   margin-bottom: 35px;
+   font-size: 30px;
+   color: blue;
+   font-family: 'Murs-Gothic';
+}
+ }
+
+ @media  (min-width: 1440px) and (max-width: 1920px) {
+   .card{
+   width: 680px;
+   height: 370px;
+   border-radius: 30px;
+   padding: 40px;
+   margin: 20px;
+   outline: 1px solid #000000;
+   color:#ffffff;
+   
+}
+
+.card-tittle{
+   font-size: 50px;
+   line-height: 140%;
+}
+.card-list > li{
+   font-size: 20px;
+line-height: 250%;
+position: relative;
+padding-left: 20px;
+}
+.tittle{
+   font-family: 'Murs Gothic', sans-serif;
+   font-weight: bold;
+   margin-bottom: 35px;
+   font-size: 30px;
+   color: blue;
+   font-family: 'Murs-Gothic';
+}
+ }
+
+ @media  screen and (min-width: 1920px)  {
+   .card{
+   width: 900px;
+   height: 570px;
+   border-radius: 30px;
+   padding: 40px;
+   margin: 20px;
+   outline: 1px solid #000000;
+   color:#ffffff;
+   
+}
+   .card-tittle{
+   font-size: 50px;
+   line-height: 140%;
+}
+.card-list > li{
+   font-size: 40px;
+line-height: 250%;
+position: relative;
+padding-left: 20px;
+}
+.tittle{
+   font-family: 'Murs Gothic', sans-serif;
+   font-weight: bold;
+   margin-bottom: 35px;
+   font-size: 60px;
+   color: blue;
+   font-family: 'Murs-Gothic';
+}
+ }
+
+
+
+
+
+
+
+
+
 </style>

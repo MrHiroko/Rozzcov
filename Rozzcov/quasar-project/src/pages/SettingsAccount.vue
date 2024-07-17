@@ -32,7 +32,7 @@
                             </div>
                             <div class="col secondfam_block birthday_block ">
                                 <label>Дата рождения</label>
-                                <q-input  class="input_date" outlined square v-model="text" hint="" :dense="dense"
+                                <q-input  class="input_date" dense  outlined rounded v-model="text" hint="" 
                                     type="date" />
                             </div>
                         </div>
@@ -106,7 +106,8 @@
                 </q-card>
 </div>
  </div>
-<div class="col-6"><q-card class="card card_control">
+<div class="col-6">
+    <q-card class="card card_control">
                   <div class="icon_block">
                       <img class="icon_person" src="src/assets/icons/rouble.svg">
                       <span class="data-text">Управление подпиской</span>
