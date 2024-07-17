@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <div class="row">
+    <div class="row content">
         <div class="col-12 title">
             <q-span class="title title_kurses"> КУРСЫ </q-span> > <q-span class="title olympiad_title">ОЛИМПИАДЫ ПО М.О.
             </q-span> > <q-span class="title international_title">МЕЖДУНАРОДНЫЕ ОРГАНИЗАЦИИ </q-span> > <q-span
@@ -21,12 +21,12 @@
             <q-span class="textbook_title">УЧБЕНИК ПО МЕЖДУНАРОДНЫМ ОРГАНИЗАЦИЯМ</q-span>
         </div>
         <div class="row information_block fit row wrap justify-between items-center content-start">
-            <div class="col-8 information_text">
-                <p class="information_source">Информация взята из следующих источников:</p>
-                <p>«Политология 11 класс» Р.Д Рубцовский (2014)</p>
-                <p>«Политика ХХ века» Г.М Синицын (2007)</p>
+            <div class="col-md-8 information_text">
+                <p class="information_source">Информация взята из следующих источников: <br>
+                «Политология 11 класс» Р.Д Рубцовский (2014) <br>
+                «Политика ХХ века» Г.М Синицын (2007)</p>
             </div>
-            <div class="col-4 downoload_block">
+            <div class="col-md-4 downoload_block">
                 <q-btn class="button_downoload">cкачать / .pdf (7,9 МБ)</q-btn>
             </div>
         </div>
@@ -70,7 +70,7 @@
 
 .information_source {
     font-weight: bold;
-    
+    line-height: 120%;
 }
 
 .information_block {}
@@ -86,5 +86,267 @@
     box-shadow: none;
     text-shadow: none;
     color: white;
+}
+
+@media  (min-width: 320px) and (max-width: 375px) {
+    .title {
+    font-family: 'Murs Gothic', sans-serif;
+    font-weight: bold;
+    margin-bottom: 35px;
+    font-size: 14px;
+
+    font-family: 'Murs-Gothic';
+}  
+.textbook_title {
+    font-size: 20px;
+    font-family: 'Murs-Gothic';
+}
+
+.information_text {
+text-align: center;
+    font-size: 16px;
+    line-height: 18px;
+    color: #000000;
+    font-weight: normal;
+    font-family: "Geist Variable";
+    margin-top: 10px;
+   
+}
+.information_block{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.button_downoload {
+    width: 240px;
+    height:45px;
+    border-radius: 30px;
+    text-align: center;
+    background: blue;
+    box-shadow: none;
+    text-shadow: none;
+    color: white;
+}
+.content{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.information_source{
+    text-align: center;
+    line-height: 200%;
+}
+}
+
+@media  (min-width: 375px) and (max-width: 425px) {
+    .title {
+    font-family: 'Murs Gothic', sans-serif;
+    font-weight: bold;
+    margin-bottom: 35px;
+    font-size: 16px;
+
+    font-family: 'Murs-Gothic';
+}  
+.textbook_title {
+    font-size: 20px;
+    font-family: 'Murs-Gothic';
+}
+
+.information_text {
+text-align: center;
+    font-size: 18px;
+    line-height: 18px;
+    color: #000000;
+    font-weight: normal;
+    font-family: "Geist Variable";
+    margin-top: 10px;
+   
+}
+.information_block{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.button_downoload {
+    width: 240px;
+    height:45px;
+    border-radius: 30px;
+    text-align: center;
+    background: blue;
+    box-shadow: none;
+    text-shadow: none;
+    color: white;
+}
+.content{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.information_source{
+    text-align: center;
+    line-height: 200%;
+}
+}
+@media  (min-width: 425px) and (max-width: 768px) {
+    .title {
+    font-family: 'Murs Gothic', sans-serif;
+    font-weight: bold;
+    margin-bottom: 35px;
+    font-size: 20px;
+
+    font-family: 'Murs-Gothic';
+}  
+.textbook_title {
+    font-size: 24px;
+    font-family: 'Murs-Gothic';
+}
+
+.information_text {
+text-align: center;
+    font-size: 20px;
+    line-height: 18px;
+    color: #000000;
+    font-weight: normal;
+    font-family: "Geist Variable";
+    margin-top: 10px;
+   
+}
+.information_block{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+
+
+}
+.button_downoload {
+    text-align: center;
+    width: 220px;
+    height:45px;
+    border-radius: 30px;
+    text-align: center;
+    background: blue;
+    box-shadow: none;
+    text-shadow: none;
+    color: white;
+}
+.content{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.information_source{
+    text-align: center;
+}
+}
+
+@media  (min-width: 768px) and (max-width: 1024px) {
+    .title {
+    font-family: 'Murs Gothic', sans-serif;
+    font-weight: bold;
+    margin-bottom: 35px;
+    font-size: 20px;
+
+    font-family: 'Murs-Gothic';
+}  
+.textbook_title {
+    font-size: 24px;
+    font-family: 'Murs-Gothic';
+}
+
+.information_text {
+text-align: center;
+    font-size: 20px;
+    line-height: 18px;
+    color: #000000;
+    font-weight: normal;
+    font-family: "Geist Variable";
+    margin-top: 10px;
+   
+}
+.information_block{
+
+}
+.button_downoload {
+margin-left: 10px;
+    width: 240px;
+    height:45px;
+    border-radius: 30px;
+    text-align: center;
+    background: blue;
+    box-shadow: none;
+    text-shadow: none;
+    color: white;
+}
+.content{
+
+}
+.information_source{
+    text-align: center;
+}
+.information_block{
+    display: flex;
+}
+}
+
+@media  (min-width: 1024px) and (max-width: 1440px) {
+    .title {
+    font-family: 'Murs Gothic', sans-serif;
+    font-weight: bold;
+    margin-bottom: 35px;
+    font-size: 24px;
+
+    font-family: 'Murs-Gothic';
+}  
+.textbook_title {
+    font-size: 28px;
+    font-family: 'Murs-Gothic';
+}
+
+.information_text {
+
+text-align: center;
+    font-size: 24px;
+    line-height: 18px;
+    color: #000000;
+    font-weight: normal;
+    font-family: "Geist Variable";
+    margin-top: 10px;
+   
+}
+.information_block{
+
+}
+.button_downoload {
+margin-left: 10px;
+    width: 220px;
+    height:45px;
+    border-radius: 30px;
+    text-align: center;
+    background: blue;
+    box-shadow: none;
+    text-shadow: none;
+    color: white;
+}
+.content{
+
+}
+.information_source{
+    text-align: center;
+    line-height: 150%;
+}
+.information_block{
+    display: flex;
+}
 }
 </style>
