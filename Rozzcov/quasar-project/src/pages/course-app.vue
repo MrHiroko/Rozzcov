@@ -253,7 +253,7 @@ export default {
   font-family: 'Murs-Gothic';
 }
 
-@media (min-width:320px) and (max-width:375px) {
+@media (min-width:320px) and (max-width:374px) {
   .my-card {
     width: 300px;
     left: -19px;
@@ -279,7 +279,7 @@ export default {
   }
 }
 
-@media (min-width:376px) and (max-width:425px) {
+@media (min-width:375px) and (max-width:424px) {
   .my-card {
     width: 320px;
     position: relative;
@@ -309,7 +309,7 @@ export default {
   }
 }
 
-@media (min-width:426px) and (max-width:768px) {
+@media (min-width:425px) and (max-width:767px) {
   .my-card {
     width: 400px;
 
@@ -337,6 +337,14 @@ export default {
   .card-main {
     width: 300px;
     margin-left: -53px;
+  }
+}
+@media (min-width:768px) and (max-width:1023px){
+  .card_block {
+    position: relative;
+    justify-content: center;
+
+
   }
 }
 </style>

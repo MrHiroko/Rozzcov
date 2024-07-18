@@ -21,17 +21,20 @@ export default {
     <div class="title">
         ПОДДЕРЖКА
     </div>
-<q-card class="support_card">
-    <q-span class="support_text">
-Если у вас есть вопросы или появилась проблема, мы готовы вам помочь:) <br>
-<q-span class="support_subtext">Свяжитесь с нами в любое удобное время, и мы постараемся ответить вам как можно скорее!</q-span>
-    </q-span>
-    <q-btn class="support_btn">Нажмите, чтобы с нами связаться</q-btn>
-</q-card>
-<q-span class="support_text_subtext">
-По вопросам сотрудничества: <br>
-rocoop@yandex.ru
-</q-span>
+    <div class="support_block">
+        <q-card class="support_card">
+            <q-span class="support_text">
+                Если у вас есть вопросы или появилась проблема, мы готовы вам помочь:) <br>
+                <q-span class="support_subtext">Свяжитесь с нами в любое удобное время, и мы постараемся ответить вам
+                    как можно скорее!</q-span>
+            </q-span>
+            <q-btn class="support_btn">Нажмите, чтобы с нами связаться</q-btn>
+        </q-card>
+        <q-span class="support_text_subtext">
+            По вопросам сотрудничества: <br>
+            rocoop@yandex.ru
+        </q-span>
+    </div>
 
 </template>
 
@@ -45,11 +48,12 @@ rocoop@yandex.ru
     color: blue;
     font-family: 'Murs-Gothic';
 }
-.support_text_subtext{
+
+.support_text_subtext {
     display: block;
-margin-top: 20px;
-margin-left: 20px;
-font-size: 1.5rem;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 1.5rem;
 }
 
 .support_card {
@@ -63,11 +67,12 @@ font-size: 1.5rem;
     outline: 1px solid #000000;
 
 }
-.support_text{
+
+.support_text {
     font-size: 1.6rem;
 }
 
-.support_subtext{
+.support_subtext {
     color: grey;
     font-size: 1rem;
 }
@@ -89,7 +94,147 @@ font-size: 1.5rem;
     font-size: 24px;
 }
 
+@media(min-width:320px) and (max-width:374px) {
+    .support_card {
+        width: 300px;
+        height: 250px;
+        margin-left: 0px;
+    }
+    .support_block{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
+    }
+    .support_text {
+        font-size: 1rem;
+    }
 
+    .support_subtext {
+        font-size: 0.6rem;
+    }
 
+    .support_btn {
+        width: 250px;
+        height: 35px;
+        font-size: 10px;
+        left:25px;
+    }
+
+    
+    .support_text_subtext {
+        margin-top: 20px;
+        margin-left: 00px;
+    font-size: 1rem;
+}
+
+}
+@media(min-width:375px) and (max-width:424px) {
+    .support_card {
+        width: 350px;
+        height: 300px;
+        margin-left: 0px;
+    }
+    .support_block{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .support_text {
+        font-size: 1.2rem;
+    }
+
+    .support_subtext {
+        font-size: 0.7rem;
+    }
+
+    .support_btn {
+        width: 300px;
+        height: 40px;
+        font-size: 12px;
+        left:25px;
+    }
+
+    
+    .support_text_subtext {
+        margin-top: 20px;
+        margin-left: 00px;
+    font-size: 1.2rem;
+}
+
+}
+@media(min-width:375px) and (max-width:424px) {
+    .support_card {
+        width: 350px;
+        height: 300px;
+        margin-left: 0px;
+    }
+    .support_block{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .support_text {
+        font-size: 1.2rem;
+    }
+
+    .support_subtext {
+        font-size: 0.7rem;
+    }
+
+    .support_btn {
+        width: 300px;
+        height: 40px;
+        font-size: 12px;
+        left:25px;
+    }
+
+    
+    .support_text_subtext {
+        margin-top: 20px;
+        margin-left: 00px;
+    font-size: 1.2rem;
+}
+
+}
+@media(min-width:475px) and (max-width:767px) {
+    .support_card {
+        width: 350px;
+        height: 300px;
+        margin-left: 0px;
+    }
+    .support_block{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .support_text {
+        font-size: 1.2rem;
+    }
+
+    .support_subtext {
+        font-size: 0.7rem;
+    }
+
+    .support_btn {
+        width: 300px;
+        height: 40px;
+        font-size: 12px;
+        left:25px;
+    }
+
+    
+    .support_text_subtext {
+        margin-top: 20px;
+        margin-left: 00px;
+    font-size: 1.2rem;
+}
+
+}
+
+/* width: 1500px;
+    height: 350px; */
 </style>
