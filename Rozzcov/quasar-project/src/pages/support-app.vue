@@ -196,12 +196,13 @@ export default {
         margin-top: 20px;
         margin-left: 00px;
     font-size: 1.2rem;
+    }
 }
 
-}
-@media(min-width:475px) and (max-width:767px) {
+
+@media(min-width:425px) and (max-width:767px) {
     .support_card {
-        width: 350px;
+        width: 400px;
         height: 300px;
         margin-left: 0px;
     }
@@ -212,25 +213,131 @@ export default {
 
     }
     .support_text {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
 
     .support_subtext {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
     }
 
     .support_btn {
-        width: 300px;
-        height: 40px;
-        font-size: 12px;
-        left:25px;
+        width: 330px;
+        height: 45px;
+        font-size: 14px;
+        left:35px;
     }
 
     
     .support_text_subtext {
         margin-top: 20px;
         margin-left: 00px;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+}
+
+}
+@media(min-width:768px) and (max-width:1023px) {
+    .support_card {
+        width: 740px;
+        height: 315px;
+        margin-left: 0px;
+    }
+    .support_block{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .support_text {
+        font-size: 1.5rem;
+    }
+
+    .support_subtext {
+        font-size: 1rem;
+    }
+
+    .support_btn {
+        width: 380px;
+        height: 50px;
+        font-size: 16px;
+        left:170px;
+    }
+
+    
+    .support_text_subtext {
+        margin-top: 20px;
+        margin-left: 00px;
+    font-size: 1.5rem;
+}
+
+}
+@media(min-width:1024px) and (max-width:1439px) {
+    .support_card {
+        width: 680px;
+        height: 315px;
+        margin-left: 0px;
+    }
+    .support_block{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .support_text {
+        font-size: 1.5rem;
+    }
+
+    .support_subtext {
+        font-size: 1rem;
+    }
+
+    .support_btn {
+        width: 380px;
+        height: 50px;
+        font-size: 16px;
+        left:150px;
+    }
+
+    
+    .support_text_subtext {
+        margin-top: 20px;
+        margin-left: 00px;
+    font-size: 1.5rem;
+}
+
+}
+@media(min-width:1440px) and (max-width:1830px) {
+    .support_card {
+        width: 1050px;
+        height: 315px;
+        margin-left: 10px;
+    }
+    .support_block{
+        display: flex;
+        flex-direction: column;
+        
+
+    }
+    .support_text {
+        font-size: 1.6rem;
+    }
+
+    .support_subtext {
+        font-size: 1rem;
+    }
+
+    .support_btn {
+        width: 500px;
+        height: 55px;
+        font-size: 20px;
+        left:20px;
+        bottom:20px;
+    }
+
+    
+    .support_text_subtext {
+        margin-top: 20px;
+        margin-left: 20px;
+    font-size: 1.5rem;
 }
 
 }
