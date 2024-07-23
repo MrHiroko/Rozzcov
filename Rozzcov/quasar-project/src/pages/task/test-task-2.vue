@@ -55,7 +55,7 @@ methods: {
 
 
 <q-card class="row test">
-<div class="col-12 number">
+<div class="col-12 number fit row wrap justify-start items-start content-start">
    <q-span class="num">14 (0101014) </q-span>
    <q-span class="history">история</q-span>
    <q-span class="ft-history">отечественная история</q-span>
