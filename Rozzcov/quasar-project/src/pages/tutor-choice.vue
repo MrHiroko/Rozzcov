@@ -473,4 +473,10 @@ export default {
         margin-top: 280px;
     }
 }
+@media (min-width:2050px){
+    .tutor_card{
+        
+        margin-top: 100px;
+    }
+}
 </style>
