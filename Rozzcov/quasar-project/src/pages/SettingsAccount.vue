@@ -7,8 +7,9 @@
         НАСТРОЙКИ
     </div>
     <div class="row content">
- <div class="col-6 column">
-    <div class="col-5"><q-card class="card card-data">
+ <div class="col-lg-6 column">
+    <div class="col-lg-5">
+        <q-card class="card card-data">
                     <div class="icon_block">
                         <img class="icon_person" src="src/assets/icons/person.svg">
                         <span class="data-text">Личные данные</span>
@@ -16,21 +17,21 @@
                     <div class="q-pa-md example-row-equal-width data_input_block">
 
                         <div class="row">
-                            <div class="col family_block">
+                            <div class="col-xs-12  col-lg-5  family_block">
                                 <label>Фамилия</label>
                                 <q-input dense rounded outlined class="input input_family"></q-input>
                             </div>
-                            <div class="col name_block">
+                            <div class="col-xs-12 col-lg-5 name_block">
                                 <label>Имя</label>
                                 <q-input dense rounded outlined class="input input_name input-sm"></q-input>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col secondfam_block">
+                            <div class="col-xs-12 col-lg-5 secondfam_block">
                                 <label>Отчество</label>
                                 <q-input dense rounded outlined class="input input_second input-sm"></q-input>
                             </div>
-                            <div class="col secondfam_block birthday_block ">
+                            <div class="col-xs-12 col-lg-5 secondfam_block birthday_block ">
                                 <label>Дата рождения</label>
                                 <q-input  class="input_date" dense  outlined rounded v-model="text" hint="" 
                                     type="date" />
@@ -38,7 +39,8 @@
                         </div>
                     </div>
                 </q-card></div>
-    <div class="col-6"><q-card class="card card-security">
+    <div class="col-lg-6">
+        <q-card class="card card-security">
                     <div class="icon_block">
                         <img class="icon_person" src="src/assets/icons/key.svg">
                         <span class="data-text security-text">Вход и безопасность</span>
@@ -49,9 +51,9 @@
 
                                 <div class="row fit row wrap justify-center items-center content-center posta_grid">
                                     <label class="posta_label col-12">Почта</label>
-                                    <q-input dense rounded outlined class="input input_posta input-sm col-8"
+                                    <q-input dense rounded outlined class="input input_posta col-xs-12 input-sm col-lg-8"
                                         type="email"></q-input>
-                                    <div class="change-btn-block col-4">
+                                    <div class="change-btn-block col-xs-12 col-lg-4">
                                         <q-btn class="change_btn">Изменить</q-btn>
                                     </div>
                                     <div class="col-12 conf_posta">
@@ -71,9 +73,9 @@
 
                                 <div class="row fit row wrap justify-center items-center content-center password_grid">
                                     <label class="password_label col-12">Пароль</label>
-                                    <q-input dense rounded outlined class="input input_password  col-8"
+                                    <q-input dense rounded outlined class="input input_password col-xs-12 col-lg-8"
                                         type="password"></q-input>
-                                    <div class="change-btn-block col-4">
+                                    <div class="change-btn-block col-xs-12  col-lg-4">
                                         <q-btn class="change_btn">Изменить</q-btn>
                                     </div>
 
@@ -89,9 +91,9 @@
 
                                 <div class="row fit row wrap justify-center items-center content-center card_grid">
                                     <label class="card_label col-12">Привязанная карта</label>
-                                    <q-input dense rounded outlined class="input input_card  col-8" type="text"></q-input>
-                                    <div class="change-btn-block col-4">
-                                        <q-btn class="change_btn">Изменить</q-btn>
+                                    <q-input dense rounded outlined class="input input_card col-xs-12  col-lg-8" type="text"></q-input>
+                                    <div class="change-btn-block col-xs-12 col-lg-4">
+                                        <q-btn class="change_btn ">Изменить</q-btn>
                                     </div>
 
                                 </div>
@@ -106,7 +108,7 @@
                 </q-card>
 </div>
  </div>
-<div class="col-6">
+<div class="col-md-6">
     <q-card class="card card_control">
                   <div class="icon_block">
                       <img class="icon_person" src="src/assets/icons/rouble.svg">
@@ -163,28 +165,37 @@
 </template>
 
 <style>
+
+
 .name_block {
     margin-right: 30px;
     height: 97px;
+
+
 }
 
 .family_block {
     margin-right: 30px;
     height: 97px;
+
+
 }
 
 .secondfam_block {
     margin-top: 20px;
     margin-right: 30px;
+    margin-top: 45px;
+
 }
 
 .icon_person {
     width: 35px;
     height: 35px;
+    
 }
 
 .icon_block {
-    width: 500px;
+
     height: 60px;
     display: flex;
     align-items: center;
@@ -211,7 +222,7 @@
 }
 
 .card-data {
-    height: 350px;
+    height: 300px;
 }
 
 .data-text {
@@ -351,7 +362,7 @@
     background-color: #0000FF;
 }
 .price_base{
-    left:358px;
+    left:658px;
 }
 .pro{
     background-color:#5A00FF ;
@@ -364,5 +375,500 @@
     color:white;
     margin-left: 30px;
     margin-top: -15px;
+}
+
+@media (min-width:320px) and (max-width:375px) {
+
+    .price{
+    font-size: 16px;
+    color:white;
+    left:49px;
+    top: 140px;
+}
+    .price_base{
+        font-size: 16px;
+    left:49px;
+    top: 140px;
+}
+
+.price_free{
+        font-size: 16px;
+    left:49px;
+    top: 140px;
+}
+
+.price_pro{
+        text-align: center;
+        font-size: 16px;
+    left:44px;
+    top: 190px;
+}
+
+
+    .card {
+    
+    padding-top: 15px;
+    padding-left: 30px;
+    border: 1px solid black;
+    width: 300px;
+
+    border-radius: 30px;
+}
+
+.data-text {
+    font-size: 16px;
+}
+
+.card-data {
+    height: 400px;
+    margin-bottom: 50px;
+}
+.secondfam_block {
+    margin-top: 20px;
+    margin-right: 30px;
+    margin-top: 35px;
+
+}
+.name_block {
+    margin-right: 30px;
+    height: 97px;
+    margin-top: 35px;
+
+}
+
+.family_block {
+    margin-right: 30px;
+    height: 97px;
+    margin-top: 35px;
+
+}
+
+.card-security {
+    height: 600px;
+    margin-top: 20px;
+
+    
+}
+.card-security  .input{
+    margin-bottom: 10px;
+
+}
+
+.change_btn{
+margin-left: 40px;
+}
+.conf_posta{
+    margin-left: 50px;
+}
+.card_control {
+    height: 1250px;
+    margin-top: 20px;
+}
+.subscribe{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.plan_btn{
+    width: 170px;
+    height: 35px;
+    font-size: 14px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+    position: absolute;
+    left:20px;
+    top:240px;
+}
+
+.sub_block{
+    position: relative;
+    width:200px;
+    height: 300px;
+    
+    border-radius: 30px;
+}
+.sub_text{
+    font-size: 16px;
+}
+.pro_tutorship_text{
+    font-size: 14px;
+}
+.title{
+    font-size: 20px;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+}
+
+
+}
+
+@media (min-width:375px) and (max-width:425px) {
+    .price{
+    font-size: 16px;
+    color:white;
+    left:49px;
+    top: 140px;
+}
+    .price_base{
+        font-size: 16px;
+    left:49px;
+    top: 140px;
+}
+
+.price_free{
+        font-size: 16px;
+    left:49px;
+    top: 140px;
+}
+
+.price_pro{
+        text-align: center;
+        font-size: 16px;
+    left:44px;
+    top: 190px;
+}
+
+
+    .card {
+    
+    padding-top: 15px;
+    padding-left: 30px;
+    border: 1px solid black;
+    width: 300px;
+
+    border-radius: 30px;
+}
+
+.data-text {
+    font-size: 16px;
+}
+
+.card-data {
+    height: 400px;
+    margin-bottom: 50px;
+}
+.secondfam_block {
+    margin-top: 20px;
+    margin-right: 30px;
+    margin-top: 35px;
+
+}
+.name_block {
+    margin-right: 30px;
+    height: 97px;
+    margin-top: 35px;
+
+}
+
+.family_block {
+    margin-right: 30px;
+    height: 97px;
+    margin-top: 35px;
+
+}
+
+.card-security {
+    height: 600px;
+    margin-top: 20px;
+
+    
+}
+.card-security  .input{
+    margin-bottom: 10px;
+
+}
+
+.change_btn{
+margin-left: 40px;
+}
+.conf_posta{
+    margin-left: 50px;
+}
+.card_control {
+    height: 1250px;
+    margin-top: 20px;
+}
+.subscribe{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.plan_btn{
+    width: 170px;
+    height: 35px;
+    font-size: 14px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+    position: absolute;
+    left:20px;
+    top:240px;
+}
+
+.sub_block{
+    position: relative;
+    width:200px;
+    height: 300px;
+    
+    border-radius: 30px;
+}
+.sub_text{
+    font-size: 16px;
+}
+.pro_tutorship_text{
+    font-size: 14px;
+}
+.title{
+    font-size: 26px;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+}
+}
+
+@media (min-width:425px) and (max-width:600px) {
+    .price{
+    font-size: 16px;
+    color:white;
+    left:49px;
+    top: 140px;
+}
+    .price_base{
+        font-size: 16px;
+    left:49px;
+    top: 140px;
+}
+
+.price_free{
+        font-size: 16px;
+    left:49px;
+    top: 140px;
+}
+
+.price_pro{
+        text-align: center;
+        font-size: 16px;
+    left:44px;
+    top: 190px;
+}
+
+
+    .card {
+    
+    padding-top: 15px;
+    padding-left: 30px;
+    border: 1px solid black;
+    width: 300px;
+
+    border-radius: 30px;
+}
+
+.data-text {
+    font-size: 16px;
+}
+
+.card-data {
+    height: 400px;
+
+}
+.secondfam_block {
+    margin-top: 20px;
+    margin-right: 30px;
+    margin-top: 35px;
+
+}
+.name_block {
+    margin-right: 30px;
+    height: 97px;
+    margin-top: 35px;
+
+}
+
+.family_block {
+    margin-right: 30px;
+    height: 97px;
+    margin-top: 35px;
+
+}
+
+.card-security {
+    height: 600px;
+
+
+    
+}
+.card-security  .input{
+    margin-bottom: 10px;
+
+}
+
+.change_btn{
+margin-left: 40px;
+}
+.conf_posta{
+    margin-left: 50px;
+}
+.card_control {
+    height: 1250px;
+    margin-top: 20px;
+}
+.subscribe{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.plan_btn{
+    width: 170px;
+    height: 35px;
+    font-size: 14px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+    position: absolute;
+    left:20px;
+    top:240px;
+}
+
+.sub_block{
+    position: relative;
+    width:200px;
+    height: 300px;
+    
+    border-radius: 30px;
+}
+.sub_text{
+    font-size: 16px;
+}
+.pro_tutorship_text{
+    font-size: 14px;
+}
+.title{
+    font-size: 20px;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+}
+}
+
+@media (min-width:600px) and (max-width:768px) {
+    .card-data{
+height: 400px;
+width: 580px;
+}
+.family_block{
+    margin-bottom: 35px;
+}
+    .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title{
+    font-size: 28px;
+}
+.card-security{
+    height: 600px;
+    margin-bottom: 20px;
+}
+.change_btn{
+position: relative;
+    margin-top: 10px;
+left: -32px;
+}
+.price_base{
+  left: 350px;
+}
+.card-security{
+    width: 580px;
+}
+.card_control{
+    width: 580px;
+}
+.subscribe{
+  margin-left: -40px;
+}
+.sub_block{
+    width: 550px;
+}
+.plan_btn{
+    width: 200px;
+ top: 100px;
+    left: 20px;
+}
+.price {
+    font-size: 24px;
+}
+.sub_text{
+    font-size: 12px;
+}
+}
+
+@media (min-width:769px) and (max-width:1024px){
+    .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.card-data{
+height: 400px;
+}
+.family_block{
+    margin-bottom: 35px;
+}
+.card-security{
+    height: 600px;
+    margin-bottom: 20px;
+}
+.change_btn{
+position: relative;
+    margin-top: 10px;
+left: -32px;
+}
+.price_base{
+  left: 350px;
+}
+}
+
+@media (min-width:1024px) and (max-width:1440px){
+    .content{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+}
+.card-data{
+height: 400px;
+}
+.family_block{
+    margin-bottom: 35px;
+}
+.card-security{
+    height: 600px;
+    margin-bottom: 20px;
+}
+.change_btn{
+position: relative;
+    margin-top: 10px;
+left: -32px;
+}
+.price_base{
+  left: 350px;
+}
+}
+
+.price_base{
+  left: 350px;
 }
 </style>
