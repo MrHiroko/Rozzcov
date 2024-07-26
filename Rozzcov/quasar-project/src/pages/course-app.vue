@@ -44,7 +44,7 @@ export default {
           <header>
             <div class="row content">
 
-              <div class="col-12 tittle">
+              <div class="col-12 title">
                 КУРСЫ > ОЛИМПИАДЫ ПО М.О.
               </div>
               <div class="col-12 search">
@@ -82,7 +82,8 @@ export default {
                   <q-span class="card-free">бесплатно</q-span>
                 </q-card-section>
                 <q-card-section>
-                  плеер
+                  <iframe frameborder="0" style="border-radius:30px;width:100%;height:450px;" width="100%" height="450" src="https://music.yandex.ru/iframe/#album/496406">Слушайте <a href='https://music.yandex.ru/album/496406'>channel ORANGE</a> — <a href='https://music.yandex.ru/artist/452028'>Frank Ocean</a> на Яндекс.Музыке</iframe>
+
                 </q-card-section>
               </q-card>
 
@@ -152,199 +153,5 @@ export default {
 </template>
 
 <style scoped>
-.main {
-  margin-top: 20px;
-}
-
-.card-recomend {
-  color: white;
-  position: absolute;
-
-  right: 0;
-  border-radius: 20px;
-  display: flex;
-  background: blue;
-  top: -20px;
-  justify-content: center;
-  align-items: center;
-
-  width: 140px;
-  height: 40px;
-}
-
-.card-free {
-  font-size: 1.2rem;
-}
-
-.card-title-text {
-  font-size: 2.7rem;
-
-}
-
-.card-procent {
-  color: white;
-  position: absolute;
-  bottom: 40px;
-  right: 50px;
-}
-
-.card-main-path {
-  position: absolute;
-  bottom: 1rem;
-  left: 8%;
-  width: 85%;
-  height: 140px;
-  background: blue;
-  border-radius: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-}
-
-.card-text {
-  color: white;
-}
-
-.card-main-bg svg {
-  margin-right: 15px;
-  margin-top: 6px;
-
-}
-
-.card-title {
-  font-size: 2rem;
-  color: gray;
-}
-
-.my-card {
-  width: 470px;
-  margin-bottom: 40px;
-  margin-left: 40px;
-  height: 350px;
-  border-radius: 30px;
-}
-
-.card-main {
-  position: absolute;
-  bottom: 50px;
-  left: 25%;
-  color: gray;
-  display: flex;
-
-
-
-}
-
-.card-main svg {
-  margin-right: 30px;
-}
-
-.big {
-  height: 700px;
-}
-
-.tittle {
-  font-family: 'Murs Gothic', sans-serif;
-  font-weight: bold;
-  margin-bottom: 35px;
-  font-size: 4vw;
-  color: blue;
-  font-family: 'Murs-Gothic';
-}
-
-@media (min-width:320px) and (max-width:374px) {
-  .my-card {
-    width: 300px;
-    left: -19px;
-    position: relative;
-  }
-
-  .big {
-    height: 450px;
-  }
-
-  .card-title-text {
-    font-size: 1.5rem;
-
-  }
-
-  .card_block {
-    position: relative;
-  }
-
-  .card-main {
-    width: 250px;
-    margin-left: -53px;
-  }
-}
-
-@media (min-width:375px) and (max-width:424px) {
-  .my-card {
-    width: 320px;
-    position: relative;
-    margin-bottom: 40px;
-    margin-left: 0px;
-  }
-
-  .big {
-    height: 470px;
-  }
-
-  .card-title-text {
-    font-size: 1.5rem;
-
-  }
-
-  .card_block {
-    position: relative;
-    justify-content: center;
-
-
-  }
-
-  .card-main {
-    width: 270px;
-    margin-left: -53px;
-  }
-}
-
-@media (min-width:425px) and (max-width:767px) {
-  .my-card {
-    width: 400px;
-
-    position: relative;
-    margin-bottom: 40px;
-    margin-left: 0px;
-  }
-
-  .big {
-    height: 500px;
-  }
-
-  .card-title-text {
-    font-size: 1.8rem;
-
-  }
-
-  .card_block {
-    position: relative;
-    justify-content: center;
-
-
-  }
-
-  .card-main {
-    width: 300px;
-    margin-left: -53px;
-  }
-}
-@media (min-width:768px) and (max-width:1023px){
-  .card_block {
-    position: relative;
-    justify-content: center;
-
-
-  }
-}
+@import url(../css/pages/course-app.scss);
 </style>

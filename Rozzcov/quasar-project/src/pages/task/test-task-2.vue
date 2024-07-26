@@ -26,7 +26,7 @@ methods: {
 </script>
 <template>
 <div class="row-3">
-<div class="col tittle">
+<div class="col title">
 Курсы
 </div>
 <div class="col">
@@ -190,12 +190,5 @@ methods: {
 
 }
 
-.tittle{
-   font-family: 'Murs Gothic', sans-serif;
-   font-weight: bold;
-   margin-bottom: 35px;
-   font-size: 4vw;
-   color: blue;
-   font-family: 'Murs-Gothic';
-}
+
 </style>

@@ -22,7 +22,7 @@ methods: {
 
 <template>
    <div class="row">
-      <div class="col-12 tittle">
+      <div class="col-12 title">
          КУРСЫ > <q-span>ОЛИМПИАДЫ ПО М.О.</q-span> > <q-span>МЕЖДУНАРОДНЫЕ ОРГАНИЗАЦИИ > БЛОК 1</q-span>
 </div>
 <div class="col-12">
@@ -51,14 +51,7 @@ methods: {
 </template>
 
 <style scoped>
-.tittle{
-   font-family: 'Murs Gothic', sans-serif;
-   font-weight: bold;
-   margin-bottom: 35px;
-   font-size: 1.8vw;
-   color: blue;
-   font-family: 'Murs-Gothic';
-}
+
 .sub-title{
    font-size: 2vh;
 }

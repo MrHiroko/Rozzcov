@@ -48,14 +48,7 @@ export default {
 
 
 <style scoped>
-.title {
-    font-family: 'Murs Gothic', sans-serif;
-    font-weight: bold;
-    margin-bottom: 35px;
-    font-size: 4vw;
-    color: blue;
-    font-family: 'Murs-Gothic';
-}
+
 
 .tutorship_card {
     width: 1500px;
