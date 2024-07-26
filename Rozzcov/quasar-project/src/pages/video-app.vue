@@ -50,18 +50,10 @@ methods: {
    </div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 
-.sub-title{
-   font-size: 2vh;
-}
-.sub-text{
-   margin-left: 15px;
-}
-.video{
-   height: 600px;
-   width: 75vw;
-   border-radius: 20px;
-}
+@import '../css/pages/video-app.scss';
+
+
 
 </style>

@@ -62,7 +62,7 @@ methods: {
    <q-span class="upper-prob">ВШЭ - Высшая проба</q-span>
 </div>
 <div class="text fit">
-<div class="col-12 title-text ">Прочтите отрывок  из сочинения историка <br>С.М. Соловьева и ответьте на вопросы.</div>
+<div class="col-12 title-text ">Прочтите отрывок  из сочинения историка  С.М. Соловьева и ответьте на вопросы.</div>
 <div class="col-12 text-test">«…Пришел безбожный царь (1) на Русскую землю со множеством воинов… и стал станом на реке на Воронеже, близ (2) земли. И прислал в (3) к великому князю 
 Юрию Ингоревичу… послов без пользы для дела, прося десятины во всем: в князьях, и в людях всех сословий, и во всем. И услышал великий князь Юрий Ингоревич… 
 о приходе безбожного царя (1), и быстро послал в город Владимир к благоверному великому князю Георгию Всеволодовичу Владимирскому, прося у него либо помощи 
@@ -117,88 +117,90 @@ methods: {
 
 
  <style scoped lang="scss">
- .title-text{
-text-align: center;
-font-size: 18px;
 
- }
-.num {
-   color: blue;
-
-}
-.history {
-   background: #7800ff;
-   color: white;
-   padding: 5px;
-   border-radius: 20px;
-   margin: 0 10px;
-}
-.ft-history {
-   color: white;
-   background: #3c00ff;
-   padding: 5px;
-   border-radius: 20px;
-   margin: 0 10px;
-}
-.upper-prob {
-   color: white;
-   background: #008aff;
-   padding: 5px;
-   border-radius: 20px;
-   margin: 0 10px;
-}
-
-
-
-
- .task{
-   color: gray;
-   font-size: 1.4rem;
- }
- .test{
-   margin: 10px;
-   padding: 20px;
-   border: 1px solid black;
-   border-radius: 20px;
-
- }
- .true-btn{
-   background: gray;
-   color: white;
-   border-radius: 20px;
-   margin-top: 20px;
- }
- .answer-btn{
-   background: $standart;
-   color: white;
-   border-radius: 20px;
-   margin-top: 20px;
-   margin-right: 20px;
- }
-
-.filter{
-   margin: 0 10px;
-   border-radius: 20px;
-}
-.frame{
-   padding: 10px;
-}
-
-.answer{
-   margin-top: 20px;
-}
-.option{
-   margin-top: 10px;
-}
-.option q-input{
-   height: 40px;
-}
-
-.search{
-   position: relative;
-   left: 0;
-
-}
+.title-text{
+margin-bottom: 10px;
+   font-size: 18px;
+   text-align: center;
+   
+    }
+   .num {
+      color: blue;
+   
+   }
+   .history {
+      background: #7800ff;
+      color: white;
+      padding: 5px;
+      border-radius: 20px;
+      margin: 0 10px;
+   }
+   .ft-history {
+      color: white;
+      background: #3c00ff;
+      padding: 5px;
+      border-radius: 20px;
+      margin: 0 10px;
+   }
+   .upper-prob {
+      color: white;
+      background: #008aff;
+      padding: 5px;
+      border-radius: 20px;
+      margin: 0 10px;
+   }
+   
+   
+   
+   
+    .task{
+      color: gray;
+      font-size: 1.4rem;
+    }
+    .test{
+      margin: 10px;
+      padding: 20px;
+      border: 1px solid black;
+      border-radius: 20px;
+   
+    }
+    .true-btn{
+      background: gray;
+      color: white;
+      border-radius: 20px;
+      margin-top: 20px;
+    }
+    .answer-btn{
+      background: $standart;
+      color: white;
+      border-radius: 20px;
+      margin-top: 20px;
+      margin-right: 20px;
+    }
+   
+   .filter{
+      margin: 0 10px;
+      border-radius: 20px;
+   }
+   .frame{
+      padding: 10px;
+   }
+   
+   .answer{
+      margin-top: 20px;
+   }
+   .option{
+      margin-top: 10px;
+   }
+   .option q-input{
+      height: 40px;
+   }
+   
+   .search{
+      position: relative;
+      left: 0;
+   
+   }
 
 
 

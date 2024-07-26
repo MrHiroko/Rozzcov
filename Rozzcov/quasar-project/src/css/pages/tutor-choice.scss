@@ -77,3 +77,330 @@ right: 0px;
 width: 650px;
    bottom: -40px;
 }
+
+@media (min-width:320px) and (max-width:374px) {
+   .tutor_card {
+       width: 300px;
+       height: 870px;
+       margin: 0 auto;
+   }
+
+   .card-title-text {
+       font-size: 1rem;
+   }
+
+   .tutor_list {
+       line-height: 25px;
+       color: black;
+       font-weight: normal;
+       font-size: 9px;
+       margin-top: 0px;
+   }
+
+   .tutor_list li::before {
+
+       font-size: 15px;
+       margin-right: 5px;
+   }
+
+   .img_people_block {
+       position: absolute;
+       display: block;
+       right: 35px;
+       width: 230px;
+       bottom: 170px;
+   }
+
+   .results {
+       display: block;
+       margin-top: 350px;
+       font-size: 0.7rem;
+   }
+
+   .subscribe_btn {
+       width: 200px;
+       height: 30px;
+       border-radius: 30px;
+       font-size: 14px;
+       margin-left: 17px;
+   }
+
+   .button_block {
+       margin-top: 50px;
+   }
+}
+@media (min-width:375px) and (max-width:424px) {
+   .tutor_card {
+       width: 350px;
+       height: 920px;
+       margin: 0 auto;
+   }
+
+   .card-title-text {
+       font-size: 1.1rem;
+   }
+
+   .tutor_list {
+       line-height: 25px;
+       color: black;
+       font-weight: normal;
+       font-size: 11px;
+       margin-top: 0px;
+   }
+
+   .tutor_list li::before {
+
+       font-size: 20px;
+       margin-right: 5px;
+   }
+
+   .img_people_block {
+       position: absolute;
+       display: block;
+       right: 40px;
+       width: 270px;
+       bottom: 170px;
+   }
+
+   .results {
+       display: block;
+       margin-top: 400px;
+       font-size: 0.8rem;
+       margin-left: 8px;
+   }
+
+   .subscribe_btn {
+       width: 220px;
+       height: 30px;
+       border-radius: 30px;
+       font-size: 14px;
+       margin-left: 34px;
+   }
+
+   .button_block {
+       margin-top: 50px;
+   }
+}
+@media (min-width:425px) and (max-width:767px) {
+   .tutor_card {
+       width: 400px;
+       height: 1100px;
+       margin: 0 auto;
+   }
+
+   .card-title-text {
+       font-size: 1.5rem;
+   }
+
+   .tutor_list {
+       line-height: 30px;
+       color: black;
+       font-weight: normal;
+       font-size: 13px;
+       margin-top: 0px;
+   }
+
+   .tutor_list li::before {
+
+       font-size: 22px;
+       margin-right: 5px;
+   }
+
+   .img_people_block {
+       position: absolute;
+       display: block;
+       right: 38px;
+       width: 330px;
+       bottom: 180px;
+   }
+
+   .results {
+       display: block;
+       margin-top: 500px;
+       font-size: 0.9rem;
+       margin-left: 16px;
+   }
+
+   .subscribe_btn {
+       width: 300px;
+       height: 30px;
+       border-radius: 40px;
+       font-size: 16px;
+       margin-left: 18px;
+   }
+
+   .button_block {
+       margin-top: 50px;
+   }
+}
+@media (min-width:768px) and (max-width:1006px) {
+   .tutor_card {
+       width: 740px;
+       height: 900px;
+       margin: 0 auto;
+   }
+
+   .card-title-text {
+       font-size: 1.5rem;
+   }
+
+   .tutor_list {
+       line-height: 35px;
+       color: black;
+       font-weight: normal;
+       font-size: 15px;
+       margin-top: 0px;
+   }
+
+   .tutor_list li::before {
+
+       font-size: 25px;
+       margin-right: 5px;
+   }
+
+   .img_people_block {
+       position: absolute;
+       display: block;
+       left:390px;
+       width: 360px;
+       bottom: -23px;
+   }
+   .img_people_block img{
+      width: 400px;
+   }
+
+   .results {
+       display: block;
+       margin-top: 17px;
+       font-size: 0.9rem;
+       
+   }
+
+   .subscribe_btn {
+       width: 350px;
+       height: 40px;
+       border-radius: 50px;
+       font-size: 18px;
+       margin-left: 5px;
+   }
+
+   .button_block {
+       margin-top: 400px;
+   }
+}
+@media (min-width:1007px) and (max-width:1439px) {
+   .tutor_card {
+       width: 665px;
+       height: 950px;
+       
+   }
+
+   .card-title-text {
+       font-size: 1.5rem;
+   }
+
+   .tutor_list {
+       line-height: 35px;
+       color: black;
+       font-weight: normal;
+       font-size: 15px;
+       margin-top: 0px;
+   }
+
+   .tutor_list li::before {
+
+       font-size: 25px;
+       margin-right: 5px;
+   }
+
+   .img_people_block {
+       position: absolute;
+       display: block;
+       left:280px;
+       width: 400px;
+       bottom: -24px;
+   }
+   .img_people_block img{
+      width: 400px;
+   }
+
+   .results {
+       display: block;
+       margin-top: 17px;
+       font-size: 0.9rem;
+       
+   }
+
+   .subscribe_btn {
+       width: 320px;
+       height: 40px;
+       border-radius: 50px;
+       font-size: 16px;
+       margin-left: 5px;
+   }
+
+   .button_block {
+       margin-top: 430px;
+   }
+}
+@media (min-width:1440px) and (max-width:1845px) {
+   .tutor_card {
+       width: 1100px;
+       height:800px;
+       
+   }
+
+   .card-title-text {
+       font-size: 1.7rem;
+   }
+
+   .tutor_list {
+       line-height: 35px;
+       color: black;
+       font-weight: normal;
+       font-size: 17px;
+       margin-top: 0px;
+   }
+
+   .tutor_list li::before {
+
+       font-size: 30px;
+       margin-right: 5px;
+   }
+
+   .img_people_block {
+       position: absolute;
+       display: block;
+       left:650px;
+       width: 460px;
+       bottom: -29px;
+   }
+   .img_people_block img{
+      width: 500px;
+   }
+
+   .results {
+       display: block;
+       margin-top: 17px;
+       font-size: 1rem;
+       
+   }
+
+   .subscribe_btn {
+       width: 500px;
+       height: 50px;
+       border-radius: 50px;
+       font-size: 22px;
+       margin-left: 5px;
+   }
+
+   .button_block {
+       margin-top: 280px;
+   }
+}
+@media (min-width:2050px){
+   .tutor_card{
+       
+       margin-top: 100px;
+   }
+}
