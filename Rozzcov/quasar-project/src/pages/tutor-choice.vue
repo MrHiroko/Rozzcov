@@ -18,8 +18,8 @@ export default {
 </script>
 
 <template>
-    <div class="title">
-        НАСТАВНИЧЕСТВО > ВЫБОР НАСТАВНИКА
+    <div class="title choice_title">
+        НАСТАВНИЧЕСТВО <q-span class="arrow">></q-span> <q-span class="choice_mentor choice_title title">ВЫБОР НАСТАВНИКА</q-span>
     </div>
 
     <q-card class="tutor_card">

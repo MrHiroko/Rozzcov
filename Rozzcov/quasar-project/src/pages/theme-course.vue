@@ -101,7 +101,7 @@ methods: {
 <template>
    <div class="row">
       <div class="col-12 title">
-         КУРСЫ > <q-span>ОЛИМПИАДЫ ПО М.О.</q-span> > <q-span>МЕЖДУНАРОДНЫЕ ОРГАНИЗАЦИИ</q-span>
+         КУРСЫ <q-span class="arrow">></q-span> <q-span class="title_second title">ОЛИМПИАДЫ ПО М.О.</q-span> <q-span class="arrow">></q-span> <q-span class="title title_third">МЕЖДУНАРОДНЫЕ ОРГАНИЗАЦИИ</q-span>
 </div>
 <div class="col-12">
    <q-input dense rounded outlined  bottom-slots v-model="text" label="Нажмите, чтобы начать поиск" >

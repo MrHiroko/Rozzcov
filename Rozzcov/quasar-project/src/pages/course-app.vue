@@ -45,7 +45,7 @@ export default {
             <div class="row content">
 
               <div class="col-12 title">
-                КУРСЫ > ОЛИМПИАДЫ ПО М.О.
+                КУРСЫ <q-span class="arrow">></q-span> <span class="title_second title">ОЛИМПИАДЫ ПО М.О.</span>
               </div>
               <div class="col-12 search">
 

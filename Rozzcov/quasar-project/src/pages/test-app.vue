@@ -30,7 +30,7 @@ methods: {
 <template>
    <div class="row">
       <div class="col-12 title">
-       ТЕСТЫ > ИСТОРИЯ
+       ТЕСТЫ <q-span class="arrow">></q-span> <q-span class="history_title title">ИСТОРИЯ</q-span>
 </div>
 <div class="col-12">
    <q-input rounded outlined dense bottom-slots v-model="text" label="Нажмите, чтобы начать поиск" >

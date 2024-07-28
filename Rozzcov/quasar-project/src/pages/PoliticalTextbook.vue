@@ -5,9 +5,9 @@
 <template>
     <div class="row content">
         <div class="col-12 title">
-            <q-span class="title title_kurses"> КУРСЫ </q-span> > <q-span class="title olympiad_title">ОЛИМПИАДЫ ПО М.О.
-            </q-span> > <q-span class="title international_title">МЕЖДУНАРОДНЫЕ ОРГАНИЗАЦИИ </q-span> > <q-span
-                class="title block_title">БЛОК 2</q-span>
+            <q-span class="title title_kurses"> КУРСЫ </q-span> <q-span class="arrow">></q-span> <q-span class="title olympiad_title">ОЛИМПИАДЫ ПО М.О.
+            </q-span> <q-span class="arrow">></q-span> <q-span class="title international_title">МЕЖДУНАРОДНЫЕ ОРГАНИЗАЦИИ </q-span> <q-span class="arrow">></q-span> <q-span
+                class="title block_title international_title">БЛОК 2</q-span>
         </div>
         <div class="col-12">
             <q-input rounded outlined bottom-slots v-model="text" label="Нажмите, чтобы начать поиск">
