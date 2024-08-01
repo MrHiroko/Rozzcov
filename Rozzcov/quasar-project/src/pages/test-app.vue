@@ -6,9 +6,9 @@ export default{
    data(){
       return{
          cards: [
-         {title:"ОТЕЧЕСТВЕННАЯ ИСТОРИЯ",persent: "36%",bg:["#7800FF"], color:["#ffffff"]},
-         {title:"МИРОВАЯ ИСТОРИЯ",persent: "36%", bg:["#4800FF"], color:["#ffffff"]},
-         {title:"КУЛЬТУРА", persent: "36%",bg:["#3548FF"], color:["#ffffff"]},
+         {title:"ОТЕЧЕСТВЕННАЯ ИСТОРИЯ",persent: "36%",bg:["#ffffff"], },
+         {title:"МИРОВАЯ ИСТОРИЯ",persent: "36%", bg:["#ffffff"], },
+         {title:"КУЛЬТУРА", persent: "36%",bg:["#ffffff"], },
 
         
        ],
@@ -44,7 +44,7 @@ methods: {
 </div>
 <div class="col-12 row content">
 
-   <q-card @click="$router.push('/test-task-1')"   v-for="card in cards" :key="card.id" class="col-5 card row  "  :style="{background:card.bg, color:card.color}" >
+   <q-card @click="$router.push('/test-task-1')"   v-for="card in cards" :key="card.id" class="col-5 card row  "  :style="{background:card.bg}" >
 
 <div class="card-tittle col-12">
    

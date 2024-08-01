@@ -8,7 +8,7 @@ export default {
     return {
       drawerState: false,
       menuNav: [{
-        title: "курсы", image: `  <defs>
+        title: "теория", image: `  <defs>
     <style>
       .cls-1 {
         fill-rule: evenodd;
@@ -21,7 +21,7 @@ export default {
       },
 
       {
-        title: "тесты", image: `
+        title: "задания", image: `
   <defs>
     <style>
       .cls-1 {

@@ -6,10 +6,10 @@ export default {
    data() {
       return {
          cards: [
-            { title: "ИСТОРИЯ", persent: "36%", bg: ["#7800FF"], color: ["#ffffff"] },
-            { title: "МЕЖДУНАРОДНЫЕ ОТНОШЕНИЯ", persent: "36%", bg: ["#4800FF"], color: ["#ffffff"] },
-            { title: "ПОЛИТОЛОГИЯ", persent: "36%", bg: ["#3548FF"], color: ["#ffffff"] },
-            { title: "СОЦИОЛОГИЯ", persent: "36%", bg: ["#FFFFFF"], color: ["#737373"] },
+            { title: "ИСТОРИЯ", persent: "36%", bg: ["#2837ff"], color: ["#ffffff"] },
+            { title: "МЕЖДУНАРОДНЫЕ ОТНОШЕНИЯ", persent: "36%", bg: ["#00c6ff"], color: ["#ffffff"] },
+            { title: "ПОЛИТОЛОГИЯ", persent: "36%", bg: ["#009cff"], color: ["#ffffff"] },
+            { title: "СОЦИОЛОГИЯ", persent: "36%", bg: ["#ffffff"], color: ["#737373"], text:"в процессе разработки" },
 
          ],
 
@@ -30,7 +30,7 @@ export default {
 <template>
    <div class="row">
       <div class="col-12 title">
-         ТЕСТЫ
+         Задания
       </div>
       <div class="col-12">
          <q-input rounded outlined dense bottom-slots v-model="text" label="Нажмите, чтобы начать поиск">
@@ -50,6 +50,9 @@ export default {
             <div class="card-tittle col-12">
 
                {{ card.title }}
+            </div>
+            <div class="card-text">
+               {{ card.text }}
             </div>
 
             <div class="card-persent fit row wrap justify-end items-end content-end">
