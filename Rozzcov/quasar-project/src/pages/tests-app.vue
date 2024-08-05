@@ -9,7 +9,7 @@ export default {
             { title: "ИСТОРИЯ", persent: "36%", bg: ["#2837ff"], color: ["#ffffff"] },
             { title: "МЕЖДУНАРОДНЫЕ ОТНОШЕНИЯ", persent: "36%", bg: ["#00c6ff"], color: ["#ffffff"] },
             { title: "ПОЛИТОЛОГИЯ", persent: "36%", bg: ["#009cff"], color: ["#ffffff"] },
-            { title: "СОЦИОЛОГИЯ", persent: "36%", bg: ["#ffffff"], color: ["#737373"], text:"в процессе разработки" },
+            { title: "СОЦИОЛОГИЯ",  bg: ["#ffffff"], color: ["#737373"], text:"в процессе разработки" },
 
          ],
 
@@ -30,7 +30,7 @@ export default {
 <template>
    <div class="row">
       <div class="col-12 title">
-         Задания
+         ЗАДАНИЯ
       </div>
       <div class="col-12">
          <q-input rounded outlined dense bottom-slots v-model="text" label="Нажмите, чтобы начать поиск">

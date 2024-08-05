@@ -5,6 +5,9 @@ svg{
   position: absolute;
   left: 20px;
 }
+.title{
+   font-size: 30px;
+}
 .title_second{
    color:#5F25FF;
 }
@@ -53,6 +56,9 @@ padding: 0 20px;
 @media  (min-width: 320px) and (max-width: 375px) {
   .content{
     font-size: 16px;
+  }
+  .title{
+   font-size: 14px;
   }
   .work{
     text-align: center;
@@ -113,6 +119,9 @@ background: blue;
  @media  (min-width: 375px) and (max-width: 425px) {
   .content{
     font-size: 18px;
+  }
+  .title{
+   font-size: 16px;
   }
   .work{
 
@@ -186,6 +195,9 @@ background: blue;
   .content{
     font-size: 18px;
   }
+  .title{
+   font-size: 20px;
+  }
   .work{
 
 
@@ -255,6 +267,9 @@ background: blue;
   
   .content{
     font-size: 18px;
+  }
+  .title{
+   font-size: 20px;
   }
   .work{
 display: flex;
@@ -328,6 +343,9 @@ background: blue;
  }
  @media  (min-width: 768px) and (max-width: 1024px) {
 
+   .title{
+      font-size: 20px;
+   }
   .test{
 
 position: relative;

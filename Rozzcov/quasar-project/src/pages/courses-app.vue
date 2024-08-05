@@ -46,7 +46,7 @@ methods: {
    
 <div class="row-3">
 <div class="col title">
-Теория
+ТЕОРИЯ
 </div>
 <div class="col">
    <q-input dense rounded outlined  bottom-slots v-model="text" label="Нажмите, чтобы начать поиск" >

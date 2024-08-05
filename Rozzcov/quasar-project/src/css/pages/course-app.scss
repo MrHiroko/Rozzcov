@@ -1,7 +1,9 @@
 .main {
    margin-top: 20px;
  }
- 
+ .title{
+  font-size: 30px;
+ }
  .card-recomend {
    color: white;
    position: absolute;
@@ -101,7 +103,9 @@
      left: -19px;
      position: relative;
    }
- 
+   .title{
+    font-size: 14px;
+   }
    .big {
      height: 650px;
    }
@@ -128,7 +132,9 @@
      margin-bottom: 40px;
      margin-left: 0px;
    }
- 
+  .title{
+    font-size: 16px;
+ }
    .big {
      height: 470px;
    }
@@ -159,7 +165,9 @@
      margin-bottom: 40px;
      margin-left: 0px;
    }
- 
+   .title{
+    font-size: 20px;
+   }
    .big {
      height: 500px;
    }
@@ -187,5 +195,8 @@
      justify-content: center;
  
  
+   }
+   .title{
+    font-size: 20px;
    }
  }
