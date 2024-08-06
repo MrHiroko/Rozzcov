@@ -1,6 +1,6 @@
 .tutorship_card {
    width: 1500px;
-   height: 700px;
+   height: 741px;
    border-radius: 30px;
    padding-left: 30px;
    padding-top: 25px;
@@ -10,15 +10,16 @@
 }
 
 .card-title-text {
-   font-size: 1.8rem;
+   font-size: 36px;
+   font-weight: 600;
    color: black;
 }
 
 .tutorship_list {
-   line-height: 35px;
+   line-height: 50px;
    color: black;
    font-weight: normal;
-   font-size: 20px;
+   font-size: 28px;
    margin-top: 5px;
 }
 
@@ -33,7 +34,7 @@
 }
 
 .button_block {
-   margin-top: 160px;
+   margin-top: 100px;
 }
 
 .subscribe_btn {
@@ -63,8 +64,8 @@
    width: 700px;
    height: 600px;
    position: absolute;
-   top: 145px;
-   left: 600px;
+   top: 185px;
+   left: 800px;
 }
 
 @media (min-width:320px) and (max-width:374px) {
@@ -79,6 +80,7 @@
 
    .tutorship_list {
        font-size: 11px;
+       line-height: 35px;
    }
 
    .tutorship_list li::before {
@@ -130,6 +132,7 @@
 
    .tutorship_list {
        font-size: 14px;
+       line-height: 40px;
    }
 
    .tutorship_list li::before {
@@ -182,6 +185,7 @@
 
    .tutorship_list {
        font-size: 15px;
+       line-height: 35px;
    }
 
    .tutorship_list li::before {
@@ -234,6 +238,7 @@
 
    .tutorship_list {
        font-size: 15px;
+       line-height: 35px;
    }
 
    .tutorship_list li::before {
@@ -285,6 +290,7 @@
 
    .tutorship_list {
        font-size: 15px;
+       line-height: 35px;
    }
 
    .tutorship_list li::before {
@@ -336,6 +342,7 @@
 
    .tutorship_list {
        font-size: 17px;
+       line-height:40px;
    }
 
    .tutorship_list li::before {
