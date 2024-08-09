@@ -10,7 +10,11 @@ export default {
   },
   data(){
     return{
- 
+      text_a:'',
+      text_b:'',
+      text_c:'',
+      error_text:'',
+      
     };
   },
   mounted() {
@@ -18,7 +22,12 @@ export default {
 },
 
 methods: {
-  
+  answer(){
+   if(this.text_a == '' || this.text_b == '' || this.text_c == ''){
+      this.error_text = 'Заполните все поля!'
+      
+   }
+  }
 },
 
 }
@@ -27,7 +36,7 @@ methods: {
 <template>
 <div class="row-3">
 <div class="col title">
-Курсы
+Курсы 
 </div>
 <div class="col">
    <q-input rounded outlined  bottom-slots v-model="text" label="Нажмите, чтобы начать поиск" >
@@ -74,23 +83,26 @@ methods: {
 <div class="col-12 answer row">
    <div class="option col-12">
       <q-span>A) О каком российском правителе идёт речь?</q-span>
-      <q-input rounded outlined v-model="text"   type="text" dense   label="Введите ответ" ></q-input>
+      <q-input rounded outlined v-model="text_a"   type="text" dense   label="Введите ответ" ></q-input>
    </div>
    <div class="option col-12">
       <q-span>Б) Назовите дату начала его правления</q-span>
-      <q-input rounded outlined v-model="text" dense label="Введите ответ" ></q-input>
+      <q-input rounded outlined v-model="text_b" dense label="Введите ответ" ></q-input>
    </div>
    <div class="option col-12">
       <q-span>В) Назовите имя следующего за ним царя</q-span>
-      <q-input rounded outlined v-model="text" dense label="Введите ответ" ></q-input>
+      <q-input rounded outlined v-model="text_c" dense label="Введите ответ" ></q-input>
    </div>
-   <q-span>Примечание: вводить имена и прозвища людей нужно только кириллическми символами. Например, «Пётр Первый», а не «Пётр 1» или «Пётр I»  </q-span>
+   <q-span> Примечание: вводить имена и прозвища людей нужно только кириллическми символами. Например, «Пётр Первый», а не «Пётр 1» или «Пётр I»  </q-span>
+ 
 </div>
 <div class="col-12 fit row wrap justify-between items-center content-center">
    <div class="button">
-   <q-btn class="answer-btn" >ответить</q-btn>
+   <q-btn class="answer-btn" @click="answer">ответить </q-btn>
    <q-btn class="true-btn">показать правильные ответы</q-btn>
+   <q-span class="error">{{ this.error_text }}</q-span>
 </div>
+
 <div class="task ">
    0/3
 </div>
@@ -151,13 +163,18 @@ margin-bottom: 10px;
    }
    
    
-   
+   .error{
+      font-size: 18px;
+      color:red;
+      font-weight: 600;
+   }
    
     .task{
       color: gray;
       font-size: 1.4rem;
     }
     .test{
+   
       margin: 10px;
       padding: 20px;
       border: 1px solid black;
