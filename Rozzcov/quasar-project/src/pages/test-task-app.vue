@@ -13,10 +13,8 @@ export default {
       selected: null,
       selectedOptions: [],
 
+      count: 0,
 
-text_a: '',
- text_b: '', 
- text_c: '',
 
 
    
@@ -29,10 +27,12 @@ text_a: '',
             {
                question: 'Прочтите отрывок  из сочинения историка  С.М. Соловьева и ответьте на вопросы.',
                text: '«…Пришел безбожный царь (1) на Русскую землю со множеством воинов… и стал станом на реке на Воронеже, близ (2) земли. И прислал в (3) к великому князю Юрию Ингоревичу… послов без пользы для дела, прося десятины во всем: в князьях, и в людях всех сословий, и во всем. И услышал великий князь Юрий Ингоревич… о приходе безбожного царя (1), и быстро послал в город Владимир к благоверному великому князю Георгию Всеволодовичу Владимирскому, прося у него либо помощи воинами против безбожного царя (1), либо чтобы он сам войска привел. Князь же великий Георгий Всеволодович Владимирский и сам войско не повел, и на помощь воинов не послал, желая сам, в одиночку, сразиться с (1). …И послал сына своего князя Федора Юрьевича… к безбожному царю (1) с дарами и великими мольбами не воевать (2) земли. Князь Федор Юрьевич пришел на реку Воронеж к царю (1) и принес ему дары и молил царя, чтобы не воевал он (2) земли. Безбожный царь (1), будучи лжив и немилосерд, принял дары и неискренне обещал не ходить войною на (2) землю. И грозился-хвалился воевать землю Русскую».',
-              options: [
-                { answer: 'A) О каком российском правителе идёт речь?'},
-                { answer: 'Б) Назовите дату начала его правления' },
-                { answer: 'В) Назовите имя следующего за ним царя'},
+      
+       
+               options: [
+                { id:1, answer: 'A) О каком российском правителе идёт речь?', text: '', correct:'1', answered: false},
+                { id:2,answer: 'Б) Назовите дату начала его правления' , text: '', correct:'1', answered: false},
+                { id:3,answer: 'В) Назовите имя следующего за ним царя', text: '', correct:'1', answered: false},
               ]
             },
 
@@ -47,10 +47,18 @@ text_a: '',
         {
           questions: [
             
-            
+   
                 { answer: `A) Назовите три мирных договора или перемирия, заключенные в XVII в. между Русским царством и Речью Посполитой 
-         (в порядке возрастания по дате подписания).`},
-                { answer: 'Б) В каких годах они были подписаны?' },
+         (в порядке возрастания по дате подписания).`,  inputs: [
+                { text: '' }, 
+                { text: '' },
+                { text: '' }
+              ],},
+                { answer: 'Б) В каких годах они были подписаны?' ,  inputs: [
+                { text: '' }, 
+                { text: '' },
+                { text: '' }
+              ],},
               
             
 
@@ -112,17 +120,54 @@ text_a: '',
 },
 
 methods: {
-  answer(){
-   if(this.text_a == '' || this.text_b == '' || this.text_c == ''){
-      this.error_text = 'Заполните все поля!'
-      
-   }else{
-      this.error_text = ''
-   }
-  }
-},
+    answer(questions) {
+      let allFilled = true;
 
+      
+      for (let quest of questions) {
+        for (let option of quest.options) {
+          // Проверяем, заполнено ли поле
+          if (!option.text) { 
+            allFilled = false;
+            break;
+          }
+          
+          // Проверяем правильность ответа
+          // Проверяем, что ответ еще не был засчитан
+          if (option.text.toLowerCase() === option.correct.toLowerCase() && !option.answered) {
+            this.count += 1; // Увеличиваем счётчик правильных ответов
+            option.answered = true; // Отмечаем ответ как выполненный
+            
+            // Ограничиваем максимальное значение count до 3
+            if (this.count > 3) {
+              this.count = 3; // Ограничиваем до 3
+              break; // Можно прервать цикл, так как дальше проверять нет смысла
+            }
+          }
+        }
+      }
+      
+      if (!allFilled) { 
+        this.error_text = 'Заполните все поля!'; 
+      } else { 
+        this.error_text = '';
+        // Можно добавить что-то, когда все поля заполнены - например, показать итоговый результат
+      }
+    },
+
+
+
+
+
+
+
+
+
+  }
 }
+
+
+
 
 </script>
 <template>
@@ -170,31 +215,38 @@ methods: {
           {{ quest.text }}
         </div> 
       </div> 
-      <div class="col-12 answer row"> 
-        <div class="option col-12" v-for="quest in task.questions" :key="quest.id">
-          <div v-for="option in quest.options" :key="option.id"> 
-            <q-span>{{ option.answer }}</q-span> 
-
-            <q-input   rounded outlined v-model="text_a" type="text" dense label="Введите ответ"></q-input> 
-
-          </div>
+      <div class="col-12 answer row">  
+      <div class="option col-12" v-for="quest in task.questions" :key="quest.id"> 
+        <div v-for="(option, index) in quest.options" :key="index.id">  
+          <q-span> 
+            {{ option.answer }} 
+          </q-span>
+          <q-input 
+            rounded 
+            outlined 
+            v-model="option.text" 
+            type="text" 
+            :value="awdaw"
+            dense 
+            label="Введите текст"
+          /> 
         </div>
-        <q-span> Примечание: вводить имена и прозвища людей нужно только кириллическми символами. Например, «Пётр Первый», а не «Пётр 1» или «Пётр I»  </q-span>
- 
-      </div>
+      </div> 
+    </div> 
       <div class="col-12 fit row wrap justify-between items-center content-center">
    <div class="button">
-   <q-btn class="answer-btn" @click="answer">ответить </q-btn>
-   <q-btn class="true-btn">показать правильные ответы</q-btn>
+   <q-btn class="answer-btn" @click="answer(task.questions)" >ответить </q-btn>
+   <q-btn class="true-btn" @click="correct()">показать правильные ответы</q-btn>
    <q-span class="error">{{ this.error_text }}</q-span>
 </div>
 
 <div class="task ">
-   0/3
+   {{ count }} /3
 </div>
 </div>
     </q-card>
 
+    <!--task 2-->
 
     <q-card class="row test" v-for="task in task_2" :key="task.id">
 <div class="col-12 number fit row wrap justify-start items-start content-start">
@@ -207,20 +259,31 @@ methods: {
 <div class="col-12 answer row">
    <div class="option col-12" v-for="quest in task.questions" :key="quest.id">
       <q-span>{{ quest.answer }}</q-span>
-      <q-input class="input" rounded outlined v-model="text"   type="text" dense   label="Введите ответ" ></q-input>
-      <q-input class="input" rounded outlined v-model="text"   type="text" dense   label="Введите ответ" ></q-input>
-      <q-input  class="input" rounded outlined v-model="text"   type="text" dense   label="Введите ответ" ></q-input>
+
+      <q-input
+      v-for="input in task_2[0].questions[0].inputs"
+      :key="input"
+      rounded
+      outlined
+      v-model="input.text"
+      type="text"
+      dense
+      :label="`Введите ответ`"
+    />
+
+
    </div>
 
 
 </div>
 <div class="col-12 fit row wrap justify-between items-center content-center">
    <div class="button">
-   <q-btn class="answer-btn" >ответить</q-btn>
+   <q-btn class="answer-btn" @click="answer_2(task.questions)" >ответить</q-btn>
    <q-btn class="true-btn">показать правильные ответы</q-btn>
+   <q-span class="error">{{ this.error_text }}</q-span>
 </div>
 <div class="task ">
-   1/2
+   {{count}}/2
 </div>
 </div>
 
@@ -229,7 +292,7 @@ methods: {
 </q-card>
 
 
-
+<!--task 3-->
 
 
 
@@ -370,6 +433,9 @@ margin-bottom: 10px;
    
    
    .error{
+      position: relative;
+      bottom: -10px;
+      left: 20px;
       font-size: 18px;
       color:red;
       font-weight: 600;
