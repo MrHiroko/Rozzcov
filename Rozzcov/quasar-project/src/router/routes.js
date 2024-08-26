@@ -26,9 +26,16 @@ const routes = [
       { path: '/settings', component: () => import('pages/SettingsAccount.vue') },
       { path: '/politicaltextbook', component: () => import('pages/PoliticalTextbook.vue') },
       { path: '/test-task-app', component: () => import('pages/test-task-app.vue') },
+      
     ]
   },
-
+  {
+    path: '/',
+    
+    children: [
+      { path: '/login-profile', component: () => import('pages/LoginProfile.vue') },
+    ]
+  },
 ]
 
 export default routes

@@ -1,0 +1,59 @@
+.card_profile{
+    width: 561px;
+    height: 605px;
+    border-radius: 39px;
+    outline: 1px solid #000000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+.logo_block img{
+    width: 120px;
+    margin: 0 auto;
+}
+.logo_block{
+    
+    text-align: center;
+}
+.title_block{
+    text-align: center;
+    font-size: 50px;
+    margin-top: -40px;
+}
+.input_block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ gap:10px;
+}
+.posta_input{
+    width: 475px;
+    height: 47px;
+    font-size: 23px;
+}
+.posta_input_block{
+    margin-top: 15px;
+}
+.label{
+    font-size: 18px;
+}
+.btn_block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    gap:10px;
+}
+.login_btn {
+   
+    
+    color: white;
+    background-color: #0000FF;
+    width: 476px;
+    height:47px;
+    border-radius: 50px;
+    font-size: 18px;
+ }
+ 
