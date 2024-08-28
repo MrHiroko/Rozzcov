@@ -2,12 +2,8 @@ const routes = [
   {
     path: "/",
     component: () => import("layouts/quick-menu.vue"),
-    children: [{ path: "", component: () => import("pages/courses-app.vue") }],
-  },
-  {
-    path: "/",
-    component: () => import("layouts/quick-menu.vue"),
     children: [
+      { path: "", component: () => import("pages/courses-app.vue") },
       { path: "/courseApp", component: () => import("pages/course-app.vue") },
       { path: "/videoApp", component: () => import("pages/video-app.vue") },
       {
@@ -41,8 +37,11 @@ const routes = [
         path: "/test-task-app",
         component: () => import("pages/test-task-app.vue"),
       },
-      { path: "/lending", component: () => import("../pages/lending.vue") },
     ],
+  },
+  {
+    path: "/lending",
+    component: () => import("../pages/lending-app.vue"),
   },
 ];
 

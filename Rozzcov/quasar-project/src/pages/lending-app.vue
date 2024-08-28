@@ -1,5 +1,7 @@
 <script>
 export default {};
 </script>
-<template>sdfsd</template>
+<template>
+  <div>wdaawdwad</div>
+</template>
 <style scoped></style>
