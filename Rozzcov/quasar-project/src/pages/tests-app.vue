@@ -1,31 +1,21 @@
-<script>
+<script setup>
 import axios from "axios"; // Импортируем axios
 import { onMounted, ref } from "vue"; // Импортируем рефы и хук onMounted из Vue
 
-export default {
-  setup() {
-    const cards = ref([]); // Создаем реф для хранения данных
+const cards = ref([]); // Создаем реф для хранения данных
 
-    const fetchCards = async () => {
-      try {
-        const response = await axios.get(
-          "https://e16e5957e31c1073.mokky.dev/carts"
-        );
-        cards.value = response.data; // Сохраняем данные в реф
-      } catch (error) {
-        console.error("Ошибка при получении данных:", error); // Обработка ошибок
-      }
-    };
-
-    // Вызываем функцию получения данных при монтировании
-    onMounted(fetchCards);
-
-    // Возвращаем переменную cards, чтобы она была доступна в шаблоне
-    return {
-      cards,
-    };
-  },
+const fetchCards = async () => {
+  try {
+    const response = await axios.get(
+      "https://e16e5957e31c1073.mokky.dev/carts"
+    );
+    cards.value = response.data; // Сохраняем данные в реф
+  } catch (error) {
+    console.error("Ошибка при получении данных:", error); // Обработка ошибок
+  }
 };
+
+onMounted(fetchCards);
 </script>
 
 <template>
