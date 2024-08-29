@@ -27,9 +27,9 @@
     </div>
     <div class="btn_block col-12">
         <q-btn class="login_btn">Войти</q-btn>
-        <q-span>Забыли пароль?</q-span>
+        <q-span class="forgot_password">Забыли пароль?</q-span>
         <q-btn class="login_btn">Войти без профиля</q-btn>
-        <q-btn class="login_btn">Войти создать профиль</q-btn>
+        <q-btn class="login_btn">Cоздать профиль</q-btn>
     </div>
 </div>
 </q-card>

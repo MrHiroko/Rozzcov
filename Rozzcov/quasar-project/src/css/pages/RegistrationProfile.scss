@@ -9,6 +9,9 @@
     transform: translate(-50%, -50%);
     
 }
+.q-field__control{
+    height: 46px;
+}
 .logo_block img{
     width: 120px;
     margin: 0 auto;
@@ -26,7 +29,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
- gap:25px;
+ 
 }
 .posta_input{
     width: 475px;
@@ -43,7 +46,7 @@
     align-items: center;
     
     gap:10px;
-    margin-top: 70px;
+    margin-top: 80px;
 }
 .login_btn {
    
