@@ -15,7 +15,7 @@
     <div class="input_block col-12">
         <div class="number_input_block">
         <label class="label">Номер карты</label>
-        <q-input rounded outlined type="text" class="number_input" />
+        <q-input rounded outlined type="text" class="number_input" dense />
         
     </div>
     <div class="period_cvc_block">

@@ -26,7 +26,7 @@
     <div class="posta_input_block block_password">
        
        <label class="label">Код</label>
-       <q-input rounded outlined type="text" class="posta_input password_input" />
+       <q-input rounded outlined type="text" class="posta_input password_input" dense />
    </div>
     </div>
     <div class="btn_block col-12">

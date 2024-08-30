@@ -16,13 +16,13 @@
     <div class="input_block col-12">
         <div class="posta_input_block">
         <label class="label">Почта</label>
-        <q-input rounded outlined type="email" class="posta_input" />
+        <q-input rounded outlined type="email" class="posta_input" dense />
         
     </div>
     <div class="posta_input_block block_password">
        
         <label class="label">Пароль</label>
-        <q-input rounded outlined type="password" class="posta_input password_input" />
+        <q-input rounded outlined type="password" class="posta_input password_input" dense />
     </div>
     </div>
     <div class="btn_block col-12">
@@ -36,7 +36,7 @@
 
 </template>
 
-<style>
+<style scoped>
 @import url(../css/pages/LoginProfile.scss);
 
 </style>
