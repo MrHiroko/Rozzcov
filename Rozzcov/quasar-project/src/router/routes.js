@@ -1,9 +1,9 @@
 const routes = [
   {
-    path: "/",
+    path: "/page",
     component: () => import("layouts/quick-menu.vue"),
     children: [
-      { path: "", component: () => import("pages/courses-app.vue") },
+      { path: "/coursesApp", component: () => import("pages/courses-app.vue") },
       {
         path: "/courseApp",
         component: () => import("src/pages/course-app.vue"),
@@ -43,11 +43,11 @@ const routes = [
     ],
   },
   {
-    path: "/lending",
+    path: "/",
     component: () => import("../pages/lending-app.vue"),
   },
   {
-    path: "/",
+    path: "/register",
 
     children: [
       {
@@ -71,6 +71,10 @@ const routes = [
       {
         path: "/choose_subscription",
         component: () => import("pages/ChooseSub.vue"),
+      },
+      {
+        path: "/PaymentApp",
+        component: () => import("pages/PaymentApp.vue"),
       },
     ],
   },

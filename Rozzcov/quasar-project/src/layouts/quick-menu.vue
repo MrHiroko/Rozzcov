@@ -17,7 +17,7 @@ export default {
   <g id="book">
     <path id="Прямоугольник_588" data-name="Прямоугольник 588" class="cls-1" d="M106,0H441V500H106a46,46,0,0,1-46-46V46A46,46,0,0,1,106,0Zm20,418H441v43H126a21,21,0,0,1-21-21v-1A21,21,0,0,1,126,418Z"/>
   </g>`,
-          path: "/",
+          path: "/coursesApp",
         },
 
         {
@@ -112,7 +112,7 @@ export default {
               <router-link to="/settings"
                 ><img src="~assets/icons/settings.svg" width="16px" alt=""
               /></router-link>
-              <img src="~assets/icons/lock.svg" width="16px" alt="" />
+              <img src="~assets/icons/exit.svg" width="16px" alt="" />
             </div>
             <div class="menu">
               <nav class="nav_menu">
