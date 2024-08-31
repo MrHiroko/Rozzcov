@@ -1,5 +1,5 @@
 <script setup>
-import axios from "axios"; // Импортируем axios
+import axios from "axios";
 import { onMounted, ref } from "vue"; // Импортируем рефы и хук onMounted из Vue
 
 const cards = ref([]); // Создаем реф для хранения данных
