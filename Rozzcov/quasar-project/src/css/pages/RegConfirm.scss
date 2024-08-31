@@ -105,13 +105,13 @@
         font-size: 12px;
     }
     .input_block{
-        margin-top:130px;
+        margin-top:129px;
     }
  }
  @media (min-width:375px) and (max-width:424px){
     .card_profile{
             width: 350px;
-            height: 500px;
+            height: 540px;
         }
         .logo_block img{
             width: 95px;
@@ -143,13 +143,13 @@
             font-size: 14px;
         }
         .input_block{
-            margin-top:90px;
+            margin-top:122px;
         }
      }
      @media (min-width:425px) and (max-width:767px){
         .card_profile{
                 width: 390px;
-                height: 530px;
+                height: 570px;
             }
             .logo_block img{
                 width: 100px;
@@ -181,13 +181,13 @@
                 font-size: 15px;
             }
             .input_block{
-                margin-top:90px;
+                margin-top:105px;
             }
          }
          @media (min-width:768px) and (max-width:1023px){
             .card_profile{
                     width: 500px;
-                    height: 530px;
+                    height: 580px;
                 }
                 .logo_block img{
                     width: 100px;
@@ -216,10 +216,83 @@
                 .login_btn{
                     width: 440px;
                     height: 20px;
-                    font-size: 15px;
+                    font-size: 16px;
                 }
                 .input_block{
-                    margin-top:70px;
+                    margin-top:108px;
                 }
              }
+             @media (min-width:1024px) and (max-width:1439px){
+                .card_profile{
+                        width: 500px;
+                        height: 580px;
+                    }
+                    .logo_block img{
+                        width: 110px;
+                    }
+                    .title_block{
+                        margin-top: -25px;
+                    }
+                    .reg_title{
+                        font-size: 38px;
+                        
+                    }
+                    .posta_title{
+                        font-size: 26px;
+                    }
+                    .input_title{
+                        font-size: 23px;
+                    }
+                    .label{
+                        font-size: 16px;
+                    }
+                    .posta_input{
+                        width: 440px;
+                        height: 47px;
+                        font-size: 18px;
+                    }
+                    .login_btn{
+                        width: 440px;
+                        height: 20px;
+                        font-size: 16px;
+                    }
+                    .input_block{
+                        margin-top:74px;
+                    }
+                 }
+                 @media (min-width:1440px) and (max-width:1850px){
+                    .card_profile{
+                        width: 600px;
+                        height: 565px;
+                    }
+                    .logo_block img{
+                        width: 120px;
+                    }
+                    .title_block{
+                        font-size: 42px;
+                        margin-top: -40px;
+                    }
+                    .label{
+                        font-size: 16px;
+                    }
+                    .posta_input{
+                        width: 530px;
+                        
+                        font-size: 16px;
+                    }
+                   
+                  
+                    .login_btn{
+                        width: 530px;
+                        height: 20px;
+                        font-size: 17px;
+                        
+                    }
+                   
+                    .input_block{
+                        margin-top:60px;
+                    }
+                 }
+                 
+     
  
