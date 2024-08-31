@@ -13,7 +13,11 @@ export default {};
             alt=""
           />
         </div>
-        <div class=""><q-btn class="header_button">ВОЙТИ</q-btn></div>
+        <div class="">
+          <q-btn class="header_button" @click="$router.push('/login-profile')"
+            >ВОЙТИ</q-btn
+          >
+        </div>
       </div>
     </header>
     <main>
@@ -26,7 +30,9 @@ export default {};
 
             <div class="text-end">ПО БВИ</div>
           </div>
-          <q-btn class="main_button">попробывать</q-btn>
+          <q-btn class="main_button" @click="$router.push('/login-profile')"
+            >попробывать</q-btn
+          >
         </div>
       </div>
 
@@ -82,7 +88,11 @@ export default {};
           <div class="education_img-item"></div>
           <div class="education_img-item"></div>
         </div>
-        <q-btn class="education_button button">перейти к теории</q-btn>
+        <q-btn
+          class="education_button button"
+          @click="$router.push('/login-profile')"
+          >перейти к теории</q-btn
+        >
       </div>
       <div class="coach">
         <div class="coach_items">
@@ -124,7 +134,11 @@ export default {};
               </div>
             </div>
 
-            <q-btn class="coach_button button">выбрать наставника</q-btn>
+            <q-btn
+              class="coach_button button"
+              @click="$router.push('/login-profile')"
+              >выбрать наставника</q-btn
+            >
           </div>
         </div>
         <div class="coach_card">
@@ -146,7 +160,11 @@ export default {};
           </div>
           <div class="coach_card-items">
             <div class="coach_card-price">5000 руб./мес.</div>
-            <q-btn class="btn coach_card-button">оформить</q-btn>
+            <q-btn
+              class="btn coach_card-button"
+              @click="$router.push('/login-profile')"
+              >оформить</q-btn
+            >
           </div>
         </div>
       </div>
@@ -164,7 +182,11 @@ export default {};
           <div class="prepare_img-item"></div>
           <div class="prepare_img-item"></div>
         </div>
-        <q-btn class="prepare_button button">перейти к заданиям</q-btn>
+        <q-btn
+          class="prepare_button button"
+          @click="$router.push('/login-profile')"
+          >перейти к заданиям</q-btn
+        >
         <div class="prepare_card">
           <div class="prepare_card-subscribe">
             <div class="prepare_card-title">
@@ -183,7 +205,11 @@ export default {};
           </div>
           <div class="prepare_card-items">
             <div class="prepare_card-price">500 руб./мес.</div>
-            <q-btn class="btn prepare_card-button">оформить</q-btn>
+            <q-btn
+              class="btn prepare_card-button"
+              @click="$router.push('/login-profile')"
+              >оформить</q-btn
+            >
           </div>
         </div>
       </div>
