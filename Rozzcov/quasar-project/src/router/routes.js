@@ -46,6 +46,34 @@ const routes = [
     path: "/lending",
     component: () => import("../pages/lending-app.vue"),
   },
+  {
+    path: "/",
+
+    children: [
+      {
+        path: "/login-profile",
+        component: () => import("pages/LoginProfile.vue"),
+      },
+      {
+        path: "/reg-profile",
+        component: () => import("pages/RegistrationProfile.vue"),
+      },
+      { path: "/reg-confirm", component: () => import("pages/RegConfirm.vue") },
+      {
+        path: "/succsess-reg",
+        component: () => import("pages/SuccessReg.vue"),
+      },
+      {
+        path: "/reg-name",
+        component: () => import("pages/RegistrationName.vue"),
+      },
+      { path: "/payment", component: () => import("pages/PaymentApp.vue") },
+      {
+        path: "/choose_subscription",
+        component: () => import("pages/ChooseSub.vue"),
+      },
+    ],
+  },
 ];
 
 export default routes;

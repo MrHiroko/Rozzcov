@@ -1,0 +1,225 @@
+.card_profile{
+    width: 561px;
+    height: 605px;
+    border-radius: 39px;
+    outline: 1px solid #000000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.logo_block img{
+    width: 120px;
+    margin: 0 auto;
+}
+.logo_block{
+    
+    text-align: center;
+}
+.title_block{
+    margin-top: -40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap:15px;
+}
+.posta_title{
+    font-size: 30px;
+    
+}
+.reg_title{
+    font-size: 50px;
+}
+.input_title{
+    font-size: 16px;
+}
+.input_block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ 
+    margin-top: 70px;
+}
+.posta_input{
+    width: 475px;
+    height: 47px;
+    font-size: 23px;
+}
+
+.label{
+    font-size: 18px;
+}
+.btn_block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    gap:10px;
+    margin-top: 30px;
+}
+.login_btn {
+   
+    
+    color: white;
+    background-color: #0000FF;
+    width: 476px;
+    height:47px;
+    border-radius: 50px;
+    font-size: 18px;
+ }
+ @media (min-width:320px) and (max-width:374px){
+.card_profile{
+        width: 300px;
+        height: 500px;
+    }
+    .logo_block img{
+        width: 80px;
+    }
+    .title_block{
+        margin-top: -10px;
+    }
+    .reg_title{
+        font-size: 20px;
+        
+    }
+    .posta_title{
+        font-size: 16px;
+    }
+    .input_title{
+        font-size: 14px;
+    }
+    .label{
+        font-size: 12px;
+    }
+    .posta_input{
+        width: 260px;
+        height: 47px;
+        font-size: 12px;
+    }
+    .login_btn{
+        width: 260px;
+        height: 10px;
+        font-size: 12px;
+    }
+    .input_block{
+        margin-top:130px;
+    }
+ }
+ @media (min-width:375px) and (max-width:424px){
+    .card_profile{
+            width: 350px;
+            height: 500px;
+        }
+        .logo_block img{
+            width: 95px;
+        }
+        .title_block{
+            margin-top: -15px;
+        }
+        .reg_title{
+            font-size: 24px;
+            
+        }
+        .posta_title{
+            font-size: 18px;
+        }
+        .input_title{
+            font-size: 16px;
+        }
+        .label{
+            font-size: 13px;
+        }
+        .posta_input{
+            width: 300px;
+            height: 47px;
+            font-size: 14px;
+        }
+        .login_btn{
+            width: 300px;
+            height: 20px;
+            font-size: 14px;
+        }
+        .input_block{
+            margin-top:90px;
+        }
+     }
+     @media (min-width:425px) and (max-width:767px){
+        .card_profile{
+                width: 390px;
+                height: 530px;
+            }
+            .logo_block img{
+                width: 100px;
+            }
+            .title_block{
+                margin-top: -20px;
+            }
+            .reg_title{
+                font-size: 28px;
+                
+            }
+            .posta_title{
+                font-size: 20px;
+            }
+            .input_title{
+                font-size: 18px;
+            }
+            .label{
+                font-size: 14px;
+            }
+            .posta_input{
+                width: 350px;
+                height: 47px;
+                font-size: 15px;
+            }
+            .login_btn{
+                width: 350px;
+                height: 20px;
+                font-size: 15px;
+            }
+            .input_block{
+                margin-top:90px;
+            }
+         }
+         @media (min-width:768px) and (max-width:1023px){
+            .card_profile{
+                    width: 500px;
+                    height: 530px;
+                }
+                .logo_block img{
+                    width: 100px;
+                }
+                .title_block{
+                    margin-top: -25px;
+                }
+                .reg_title{
+                    font-size: 34px;
+                    
+                }
+                .posta_title{
+                    font-size: 24px;
+                }
+                .input_title{
+                    font-size: 20px;
+                }
+                .label{
+                    font-size: 16px;
+                }
+                .posta_input{
+                    width: 440px;
+                    height: 47px;
+                    font-size: 18px;
+                }
+                .login_btn{
+                    width: 440px;
+                    height: 20px;
+                    font-size: 15px;
+                }
+                .input_block{
+                    margin-top:70px;
+                }
+             }
+ 
