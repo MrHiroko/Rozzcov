@@ -217,7 +217,7 @@ methods: {
       </div> 
       <div class="col-12 answer row">  
       <div class="option col-12" v-for="quest in task.questions" :key="quest.id"> 
-        <div v-for="(option, index) in quest.options" :key="index.id">  
+        <div v-for="(option, index) in quest.options" :key="index.id" class="input_answer">  
           <q-span> 
             {{ option.answer }} 
           </q-span>
@@ -229,6 +229,7 @@ methods: {
             :value="awdaw"
             dense 
             label="Введите текст"
+            
           /> 
         </div>
       </div> 
@@ -269,6 +270,7 @@ methods: {
       type="text"
       dense
       :label="`Введите ответ`"
+      class="input_answer"
     />
 
 
@@ -397,7 +399,9 @@ methods: {
 
  <style scoped lang="scss">
 
-
+.input_answer{
+  margin-top: 15px;
+}
 
 .title-text{
 margin-bottom: 10px;

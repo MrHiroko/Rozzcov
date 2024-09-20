@@ -18,7 +18,7 @@
             </q-input>
         </div>
         <div class="col-12">
-            <q-span class="textbook_title">УЧБЕНИК ПО МЕЖДУНАРОДНЫМ ОРГАНИЗАЦИЯМ</q-span>
+            <q-span class="textbook_title">УЧЕБНИК ПО МЕЖДУНАРОДНЫМ ОРГАНИЗАЦИЯМ</q-span>
         </div>
         <div class="row information_block fit row wrap justify-between items-center content-start">
             <div class="col-md-8 information_text">

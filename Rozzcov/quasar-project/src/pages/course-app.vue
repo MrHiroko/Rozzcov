@@ -81,7 +81,7 @@ export default {
                   <br>
                   <q-span class="card-free">бесплатно</q-span>
                 </q-card-section>
-                <q-card-section>
+                <q-card-section class="frame_block">
                   <iframe frameborder="0" class="pleer" style="border-radius:30px;width:100%;height:450px;" width="100%" height="450" src="https://music.yandex.ru/iframe/#album/496406">Слушайте <a href='https://music.yandex.ru/album/496406'>channel ORANGE</a> — <a href='https://music.yandex.ru/artist/452028'>Frank Ocean</a> на Яндекс.Музыке</iframe>
 
                 </q-card-section>

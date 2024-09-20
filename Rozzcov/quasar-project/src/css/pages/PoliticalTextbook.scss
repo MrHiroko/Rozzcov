@@ -31,9 +31,6 @@
    line-height: 120%;
 }
 
-.information_block {}
-
-
 
 .button_downoload {
    width: 375px;
@@ -46,7 +43,7 @@
    color: white;
 }
 
-@media  (min-width: 320px) and (max-width: 375px) {
+@media  (min-width: 320px) and (max-width: 374px) {
    .title {
    font-family: 'Murs Gothic', sans-serif;
    font-weight: bold;
@@ -99,8 +96,8 @@ text-align: center;
    line-height: 200%;
 }
 }
-// kdj //
-@media  (min-width: 375px) and (max-width: 425px) {
+
+@media  (min-width: 375px) and (max-width: 424px) {
    .title {
    font-family: 'Murs Gothic', sans-serif;
    font-weight: bold;
@@ -151,9 +148,10 @@ text-align: center;
 .information_source{
    text-align: center;
    line-height: 200%;
+   font-size: 16px;
 }
 }
-@media  (min-width: 425px) and (max-width: 768px) {
+@media  (min-width: 425px) and (max-width: 767px) {
    .title {
    font-family: 'Murs Gothic', sans-serif;
    font-weight: bold;
@@ -208,7 +206,7 @@ text-align: center;
 }
 }
 
-@media  (min-width: 768px) and (max-width: 1024px) {
+@media  (min-width: 768px) and (max-width: 1023px) {
    .title {
    font-family: 'Murs Gothic', sans-serif;
    font-weight: bold;
@@ -267,7 +265,7 @@ margin-left: 10px;
    font-family: 'Murs-Gothic';
 }  
 .textbook_title {
-   font-size: 28px;
+   font-size: 34px;
    font-family: 'Murs-Gothic';
 }
 
@@ -282,9 +280,6 @@ text-align: center;
    margin-top: 10px;
   
 }
-.information_block{
-
-}
 .button_downoload {
 margin-left: 10px;
    width: 220px;
@@ -296,9 +291,6 @@ margin-left: 10px;
    text-shadow: none;
    color: white;
 }
-.content{
-
-}
 .information_source{
    text-align: center;
    line-height: 150%;
@@ -306,4 +298,9 @@ margin-left: 10px;
 .information_block{
    display: flex;
 }
+}
+@media (min-width:1440px) and (max-width:1919px){
+   .textbook_title{
+      font-size: 52px;
+   }
 }
