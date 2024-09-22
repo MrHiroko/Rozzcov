@@ -202,7 +202,7 @@
    margin-top: -15px;
 }
 
-@media (min-width:320px) and (max-width:375px) {
+@media (min-width:320px) and (max-width:374px) {
 
    .price{
    font-size: 16px;
@@ -270,9 +270,16 @@
 
 .card-security {
    height: 600px;
+   width: 300px;
    margin-top: 20px;
-
+  
    
+}
+.security_input_block{
+   margin-left: -30px;
+}
+.posta_block{
+  
 }
 .card-security  .input{
    margin-bottom: 10px;
@@ -280,10 +287,10 @@
 }
 
 .change_btn{
-margin-left: 40px;
+margin-left: 55px;
 }
 .conf_posta{
-   margin-left: 50px;
+   margin-left: 78px;
 }
 .card_control {
    height: 1250px;
@@ -328,7 +335,10 @@ margin-left: 40px;
    display: flex;
    justify-content: center;
 }
-
+.data_input_block{
+   margin-top: -30px;
+   margin-left: -30px;
+}
 
 }
 
@@ -409,10 +419,10 @@ margin-left: 40px;
 }
 
 .change_btn{
-margin-left: 40px;
+margin-left: 55px;
 }
 .conf_posta{
-   margin-left: 50px;
+   margin-left: 78px;
 }
 .card_control {
    height: 1250px;
@@ -456,6 +466,13 @@ margin-left: 40px;
 .content{
    display: flex;
    justify-content: center;
+}
+.data_input_block{
+   margin-top: -30px;
+   margin-left: -30px;
+}
+.security_input_block{
+   margin-left: -30px;
 }
 }
 
