@@ -1,44 +1,52 @@
 const routes = [
   {
     path: "/page",
-    component: () => import("layouts/quick-menu.vue"),
+    component: () => import("layouts/MainLayout.vue"),
     children: [
-      { path: "/coursesApp", component: () => import("pages/courses-app.vue") },
+      {
+        path: "/coursesApp",
+        component: () => import("pages/courses/courses-app.vue"),
+      },
       {
         path: "/courseApp",
-        component: () => import("src/pages/course-app.vue"),
+        component: () => import("pages/courses/course-app.vue"),
       },
-      { path: "/videoApp", component: () => import("pages/video-app.vue") },
+      {
+        path: "/videoApp",
+        component: () => import("pages/courses/video-app.vue"),
+      },
       {
         path: "/themeCourse",
-        component: () => import("pages/theme-course.vue"),
+        component: () => import("pages/courses/theme-course.vue"),
       },
-      { path: "/tests", component: () => import("pages/tests-app.vue") },
+      {
+        path: "/tests",
+        component: () => import("pages/courses/tests-app.vue"),
+      },
       {
         path: "/tutorship",
-        component: () => import("pages/tutorship-app.vue"),
+        component: () => import("pages/technical/tutorship-app.vue"),
       },
-      { path: "/test", component: () => import("pages/test-app.vue") },
-      { path: "/support", component: () => import("pages/support-app.vue") },
+      { path: "/test", component: () => import("pages/courses/test-app.vue") },
+      {
+        path: "/support",
+        component: () => import("pages/technical/support-app.vue"),
+      },
       {
         path: "/tutor-choice",
-        component: () => import("pages/tutor-choice.vue"),
+        component: () => import("pages/technical/tutor-choice.vue"),
       },
-      //{ path: '/test-task-1', component: () => import('pages/task/test-task-1.vue') },
-      //{ path: '/test-task-2', component: () => import('pages/task/test-task-2.vue') },
-      //{ path: '/test-task-3', component: () => import('pages/task/test-task-3.vue') },
-      //{ path: '/test-task-4', component: () => import('pages/task/test-task-4.vue') },
       {
         path: "/settings",
-        component: () => import("pages/SettingsAccount.vue"),
+        component: () => import("pages/technical/SettingsAccount.vue"),
       },
       {
         path: "/politicaltextbook",
-        component: () => import("pages/PoliticalTextbook.vue"),
+        component: () => import("pages/courses/PoliticalTextbook.vue"),
       },
       {
         path: "/test-task-app",
-        component: () => import("pages/test-task-app.vue"),
+        component: () => import("pages/courses/test-task-app.vue"),
       },
     ],
   },

@@ -38,5 +38,5 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@import "../css/pages/tutorship-app.scss";
+@import "src/css/pages/tutorship-app.scss";
 </style>

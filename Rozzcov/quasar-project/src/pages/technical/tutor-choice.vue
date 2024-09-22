@@ -73,5 +73,5 @@ export default {
 </template>
 
 <style lang="scss">
-@import "../css/pages/tutor-choice";
+@import "src/css/pages/tutor-choice.scss";
 </style>

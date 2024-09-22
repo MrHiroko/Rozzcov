@@ -187,5 +187,5 @@
 </template>
 
 <style lang="scss">
-@import "../css/pages/SettingsAccount";
+@import "src/css/pages/SettingsAccount.scss";
 </style>

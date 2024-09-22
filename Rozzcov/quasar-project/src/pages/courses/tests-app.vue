@@ -20,21 +20,6 @@ onMounted(fetchCards);
 
 <template>
   <div class="row">
-    <div class="col-12 title">ЗАДАНИЯ</div>
-    <div class="col-12">
-      <q-input
-        rounded
-        outlined
-        dense
-        bottom-slots
-        v-model="text"
-        label="Нажмите, чтобы начать поиск"
-      >
-        <template v-slot:prepend>
-          <q-icon name="search" />
-        </template>
-      </q-input>
-    </div>
     <div class="col-12 row content">
       <q-card
         @click="$router.push('/test')"
@@ -61,5 +46,5 @@ onMounted(fetchCards);
 </template>
 
 <style lang="scss" scoped>
-@import "../css/pages/tests-app.scss";
+@import "/src/css/pages/tests-app.scss";
 </style>

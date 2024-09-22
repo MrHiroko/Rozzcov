@@ -69,93 +69,56 @@ export default {
       ],
     };
   },
-
-  mounted() {},
-
-  methods: {
-    toggleDrawer() {
-      this.drawerState = !this.drawerState;
-    },
-  },
 };
 </script>
 
 <template>
-  <q-layout view="lHh Lpr lFf">
-    <q-page-container>
-      <q-btn
-        @click="toggleDrawer"
-        icon="menu"
-        flat
-        round
-        class="q-mr-md menu_burger"
-      />
-
-      <q-drawer
-        v-model="drawerState"
-        show-if-above
-        :breakpoint="lg"
-        :width="320"
-      >
-        <div class="menu_user">
-          <div class="ro_logo">
-            <img
-              src="~assets/img/RO_main_logo.svg"
-              width="143px"
-              height="35px"
-            />
+  <div class="menu_user">
+    <div class="ro_logo">
+      <img src="~assets/img/RO_main_logo.svg" width="143px" height="35px" />
+    </div>
+    <div class="container">
+      <div class="account_user">
+        <img src="~assets/img/avatar.png" width="40px" height="40px" />
+        <div class="account_user_text">Мишанов Е.А.</div>
+        <router-link to="/settings"
+          ><img src="~assets/icons/settings.svg" width="16px" alt=""
+        /></router-link>
+        <img src="~assets/icons/exit.svg" width="16px" alt="" />
+      </div>
+      <div class="menu">
+        <nav class="nav_menu">
+          <ul>
+            <li class="nav_li" v-for="item in menuNav" :key="item.id">
+              <button @click="$router.push(item.path)">
+                <svg
+                  width="21"
+                  height="21"
+                  viewBox="0 0 500 500"
+                  v-html="item.image"
+                ></svg>
+                <span>{{ item.title }}</span>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="social_media">
+        <div class="social_media_text">
+          <p class="RO">ROZHKOV OLIMPIAD</p>
+          <p class="info">вся информация о нас тут</p>
+        </div>
+        <div class="social_media_block">
+          <div class="social_media_youtube">
+            <img class="youtube" src="~assets/icons/youtube.svg" width="40px" />
           </div>
-          <div class="container">
-            <div class="account_user">
-              <img src="~assets/img/avatar.png" width="40px" height="40px" />
-              <div class="account_user_text">Мишанов Е.А.</div>
-              <router-link to="/settings"
-                ><img src="~assets/icons/settings.svg" width="16px" alt=""
-              /></router-link>
-              <img src="~assets/icons/exit.svg" width="16px" alt="" />
-            </div>
-            <div class="menu">
-              <nav class="nav_menu">
-                <ul>
-                  <li class="nav_li" v-for="item in menuNav" :key="item.id">
-                    <button @click="$router.push(item.path)">
-                      <svg
-                        width="21"
-                        height="21"
-                        viewBox="0 0 500 500"
-                        v-html="item.image"
-                      ></svg>
-                      <span>{{ item.title }}</span>
-                    </button>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-            <div class="social_media">
-              <div class="social_media_text">
-                <p class="RO">ROZHKOV OLIMPIAD</p>
-                <p class="info">вся информация о нас тут</p>
-              </div>
-              <div class="social_media_block">
-                <div class="social_media_youtube">
-                  <img
-                    class="youtube"
-                    src="~assets/icons/youtube.svg"
-                    width="40px"
-                  />
-                </div>
-                <div class="social_media_vk">
-                  <img src="~assets/icons/vk.svg" width="43px" />
-                </div>
-              </div>
-            </div>
+          <div class="social_media_vk">
+            <img src="~assets/icons/vk.svg" width="43px" />
           </div>
         </div>
-      </q-drawer>
-
-      <router-view></router-view>
-    </q-page-container>
-  </q-layout>
+      </div>
+    </div>
+  </div>
 </template>
 
 <style scoped>
