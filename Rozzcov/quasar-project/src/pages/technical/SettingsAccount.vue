@@ -137,7 +137,7 @@
         </q-card>
       </div>
     </div>
-    <div class="col-md-6">
+    <div class="col-xxl-6">
       <q-card class="card card_control">
         <div class="icon_block">
           <img class="icon_person" src="~assets/icons/rouble.svg" />
