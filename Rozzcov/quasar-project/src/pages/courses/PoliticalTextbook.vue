@@ -1,10 +1,12 @@
-<script></script>
+<script>
+
+</script>
 
 <template>
   <div class="row content">
     <div class="col-12">
       <q-span class="textbook_title"
-        >УЧБЕНИК ПО МЕЖДУНАРОДНЫМ ОРГАНИЗАЦИЯМ</q-span
+        >УЧЕБНИК ПО МЕЖДУНАРОДНЫМ ОРГАНИЗАЦИЯМ</q-span
       >
     </div>
     <div
