@@ -1,21 +1,27 @@
 <script setup>
 defineProps({
-  cards: Array,
+  themes: Array,
 });
 import ThemePanel from "./ThemePanel.vue";
 </script>
 
 <template>
-  <div class="cards">
+  <div class="themes">
     <ThemePanel
-      :title="card.title"
-      :bg="card.bg"
-      v-for="card in cards"
-      :color="card.color"
-      :key="card.id"
-      :id="card.id"
+      :title="theme.title"
+      :time="theme.time"
+      :button="theme.button"
+      :icon="theme.icon"
+      :percent="theme.percent"
+      v-for="theme in themes"
+      :key="theme.id"
+      :id="theme.id"
     />
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.themes {
+  width: 100%;
+}
+</style>

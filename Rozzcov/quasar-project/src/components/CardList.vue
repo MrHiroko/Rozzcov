@@ -21,7 +21,7 @@ import Card from "./CardApp.vue";
 <style scoped>
 .cards {
   display: grid; /* Устанавливаем режим сетки */
-  grid-template-columns: repeat(1, 1fr); /* grid-cols-1 */
+  grid-template-columns: repeat(3, 1fr); /* grid-cols-1 */
   grid-auto-flow: row; /* grid-flow-row */
 }
 

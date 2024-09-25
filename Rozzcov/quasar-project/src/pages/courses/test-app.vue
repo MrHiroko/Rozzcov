@@ -20,7 +20,7 @@ export default {
   <div class="row">
     <div class="col-12 row content">
       <q-card
-        @click="$router.push('/test-task-app')"
+        @click="$router.push('/testApp')"
         v-for="card in cards"
         :key="card.id"
         class="col-5 card row"

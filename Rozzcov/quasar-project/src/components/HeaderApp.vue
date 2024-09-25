@@ -49,8 +49,9 @@ watch(route, setTitle);
       <div class="search">
         <img
           class="search__icon"
-          src="../assets/icons/arrow.svg"
+          src="../assets/icons/search.svg"
           alt="search"
+          width="20px"
         />
         <input
           v-model="searchQuery"
@@ -99,8 +100,12 @@ watch(route, setTitle);
 }
 .search__icon {
   position: absolute;
+  top: 8px;
+  left: 5px;
 }
 .search__input {
+  padding-left: 30px;
+  color: #000;
   width: 100%; /* w-full */
   border: 1px solid #a0aec0; /* border и border-gray-400 */
   outline: none; /* outline-none */
