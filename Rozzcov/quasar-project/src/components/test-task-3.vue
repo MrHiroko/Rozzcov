@@ -2,34 +2,24 @@
 defineProps({
   id: Number,
   quest: String,
-  answer1: String,
-  answer2: String,
-  answer3: String,
-  answer4: String,
+  answers: Array, // передаем массив ответов
   name: String,
 });
 </script>
+
 <template>
   <div class="container rounded-3xl w-full p-4 my-4 border border-black">
     <div class="col-12 answer">
       <div class="options col-12">
         <span class="question">{{ quest }}</span>
         <div class="options-container row mt-2">
-          <div class="option mr-3">
-            <input :name="name" type="radio" />
-            <span>{{ answer1 }}</span>
-          </div>
-          <div class="option mr-3">
-            <input :name="name" type="radio" />
-            <span>{{ answer2 }}</span>
-          </div>
-          <div class="option mr-3">
-            <input :name="name" type="radio" />
-            <span>{{ answer3 }}</span>
-          </div>
-          <div class="option mr-3">
-            <input :name="name" type="radio" />
-            <span>{{ answer4 }}</span>
+          <div
+            class="option mr-3"
+            v-for="(answer, index) in answers"
+            :key="index"
+          >
+            <input :name="name" type="radio" :value="answer" />
+            <span>{{ answer }}</span>
           </div>
         </div>
       </div>
@@ -51,6 +41,7 @@ defineProps({
     </div>
   </div>
 </template>
+
 <style scoped>
 .container {
   border-radius: 1.5rem; /* rounded-3xl */

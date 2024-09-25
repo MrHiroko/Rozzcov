@@ -48,6 +48,10 @@ const routes = [
         path: "/test-task-app",
         component: () => import("pages/courses/test-task-app.vue"),
       },
+      {
+        path: "/testApp",
+        component: () => import("pages/courses/testApp.vue"),
+      },
     ],
   },
   {
