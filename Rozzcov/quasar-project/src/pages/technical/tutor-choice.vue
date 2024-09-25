@@ -72,6 +72,6 @@ export default {
   </q-card>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "src/css/pages/tutor-choice.scss";
 </style>

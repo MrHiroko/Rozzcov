@@ -202,7 +202,7 @@
    margin-top: -15px;
 }
 
-@media (min-width:320px) and (max-width:375px) {
+@media (min-width:320px) and (max-width:374px) {
 
    .price{
    font-size: 16px;
@@ -211,6 +211,7 @@
    top: 140px;
 }
    .price_base{
+      text-align: center;
        font-size: 16px;
    left:49px;
    top: 140px;
@@ -269,10 +270,17 @@
 }
 
 .card-security {
-   height: 600px;
+   height: 630px;
+   width: 300px;
    margin-top: 20px;
-
+  
    
+}
+.security_input_block{
+   margin-left: -30px;
+}
+.posta_block{
+  
 }
 .card-security  .input{
    margin-bottom: 10px;
@@ -280,10 +288,18 @@
 }
 
 .change_btn{
-margin-left: 40px;
+margin-left: 55px;
 }
 .conf_posta{
-   margin-left: 50px;
+   margin-left: 80px;
+   display: flex;
+   flex-wrap: wrap;
+   
+}
+.conf_text{
+   font-size: 12px;
+   margin-top: 15px;
+   margin-left: 25px;
 }
 .card_control {
    height: 1250px;
@@ -328,16 +344,24 @@ margin-left: 40px;
    display: flex;
    justify-content: center;
 }
-
+.data_input_block{
+   margin-top: -30px;
+   margin-left: -30px;
+}
 
 }
 
-@media (min-width:375px) and (max-width:425px) {
+@media (min-width:375px) and (max-width:599px) {
    .price{
    font-size: 16px;
    color:white;
    left:49px;
    top: 140px;
+}
+.conf_text{
+   font-size: 12px;
+   margin-top: 15px;
+   margin-left: 25px;
 }
    .price_base{
        font-size: 16px;
@@ -398,7 +422,7 @@ margin-left: 40px;
 }
 
 .card-security {
-   height: 600px;
+   height: 630px;
    margin-top: 20px;
 
    
@@ -409,10 +433,12 @@ margin-left: 40px;
 }
 
 .change_btn{
-margin-left: 40px;
+margin-left: 55px;
 }
 .conf_posta{
-   margin-left: 50px;
+   margin-left: 78px;
+   display: flex;
+   flex-wrap: wrap;
 }
 .card_control {
    height: 1250px;
@@ -457,134 +483,16 @@ margin-left: 40px;
    display: flex;
    justify-content: center;
 }
+.data_input_block{
+   margin-top: -30px;
+   margin-left: -30px;
 }
-
-@media (min-width:425px) and (max-width:600px) {
-   .price{
-   font-size: 16px;
-   color:white;
-   left:49px;
-   top: 140px;
+.security_input_block{
+   margin-left: -30px;
 }
-   .price_base{
-       font-size: 16px;
-   left:49px;
-   top: 140px;
-}
-
-.price_free{
-       font-size: 16px;
-   left:49px;
-   top: 140px;
-}
-
-.price_pro{
-       text-align: center;
-       font-size: 16px;
-   left:44px;
-   top: 190px;
 }
 
 
-   .card {
-   
-   padding-top: 15px;
-   padding-left: 30px;
-   border: 1px solid black;
-   width: 300px;
-
-   border-radius: 30px;
-}
-
-.data-text {
-   font-size: 16px;
-}
-
-.card-data {
-   height: 400px;
-
-}
-.secondfam_block {
-   margin-top: 20px;
-   margin-right: 30px;
-   margin-top: 35px;
-
-}
-.name_block {
-   margin-right: 30px;
-   height: 97px;
-   margin-top: 35px;
-
-}
-
-.family_block {
-   margin-right: 30px;
-   height: 97px;
-   margin-top: 35px;
-
-}
-
-.card-security {
-   height: 600px;
-
-
-   
-}
-.card-security  .input{
-   margin-bottom: 10px;
-
-}
-
-.change_btn{
-margin-left: 40px;
-}
-.conf_posta{
-   margin-left: 50px;
-}
-.card_control {
-   height: 1250px;
-   margin-top: 20px;
-}
-.subscribe{
-   margin-top: 20px;
-   display: flex;
-   flex-direction: column;
-   gap:20px;
-}
-.plan_btn{
-   width: 170px;
-   height: 35px;
-   font-size: 14px;
-   background-color: white;
-   border: 1px solid black;
-   border-radius: 20px;
-   position: absolute;
-   left:20px;
-   top:240px;
-}
-
-.sub_block{
-   position: relative;
-   width:200px;
-   height: 300px;
-   
-   border-radius: 30px;
-}
-.sub_text{
-   font-size: 16px;
-}
-.pro_tutorship_text{
-   font-size: 14px;
-}
-.title{
-   font-size: 20px;
-}
-
-.content{
-   display: flex;
-   justify-content: center;
-}
-}
 
 @media (min-width:600px) and (max-width:768px) {
    .card-data{
@@ -621,10 +529,12 @@ left: -32px;
    width: 580px;
 }
 .subscribe{
- margin-left: -40px;
+ margin-left: -50px;
+ 
 }
 .sub_block{
    width: 550px;
+   margin:0 auto;
 }
 .plan_btn{
    width: 200px;
@@ -639,7 +549,7 @@ top: 100px;
 }
 }
 
-@media (min-width:769px) and (max-width:1024px){
+@media (min-width:769px) and (max-width:1023px){
    .content{
    display: flex;
    flex-direction: column;
@@ -647,7 +557,7 @@ top: 100px;
    justify-content: center;
 }
 .card-data{
-height: 400px;
+height: 430px;
 }
 .family_block{
    margin-bottom: 35px;
@@ -666,7 +576,7 @@ left: -32px;
 }
 }
 
-@media (min-width:1024px) and (max-width:1440px){
+@media (min-width:1024px) and (max-width:1439px){
    .content{
    display: flex;
    flex-direction: column;
@@ -674,19 +584,22 @@ left: -32px;
 
 }
 .card-data{
-height: 400px;
+height: 420px;
 }
 .family_block{
    margin-bottom: 35px;
 }
 .card-security{
-   height: 600px;
+   height: 500px;
    margin-bottom: 20px;
 }
 .change_btn{
 position: relative;
+   left:-32px;
    margin-top: 10px;
-left: -32px;
+}
+.card-security{
+   height: 620px;
 }
 .price_base{
  left: 350px;
@@ -695,4 +608,14 @@ left: -32px;
 
 .price_base{
  left: 350px;
+}
+@media (min-width:1440px) and (max-width:1719px){
+   .content{
+      gap: 90px;
+   }
+}
+@media (min-width:1720px) and (max-width:1850px){
+   .content{
+      gap: 10px;
+   }
 }
