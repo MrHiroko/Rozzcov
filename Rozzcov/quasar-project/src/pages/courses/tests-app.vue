@@ -19,8 +19,8 @@ onMounted(fetchCards);
 </script>
 
 <template>
-  <div class="row">
-    <div class="col-12 row content">
+  <div class="row justify-content-center align-items-center">
+    <div class="col-6 wrap row content">
       <q-card
         @click="$router.push('/test')"
         v-for="card in cards"
@@ -47,4 +47,7 @@ onMounted(fetchCards);
 
 <style lang="scss" scoped>
 @import "/src/css/pages/tests-app.scss";
+* {
+  justify-content: start;
+}
 </style>

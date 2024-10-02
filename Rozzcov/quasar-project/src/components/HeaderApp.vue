@@ -7,9 +7,6 @@ const title = ref("ТЕОРИЯ");
 
 const setTitle = () => {
   switch (route.name) {
-    case "home":
-      title.value = "Главная";
-      break;
     case "coursesApp":
       title.value = "ТЕОРИЯ";
       break;
@@ -41,7 +38,7 @@ watch(route, setTitle);
 </script>
 
 <template>
-  <header>
+  <header class="">
     <div class="header">
       <div class="header__title">
         {{ title }}

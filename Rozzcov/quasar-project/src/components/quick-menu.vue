@@ -75,7 +75,7 @@ export default {
 <template>
   <div class="menu_user">
     <div class="ro_logo">
-      <img src="~assets/img/RO_main_logo.svg" width="143px" height="35px" />
+      <img src="~assets/img/RO_main_logo.svg" width="140px" height="35px" />
     </div>
     <div class="container">
       <div class="account_user">
@@ -122,6 +122,8 @@ export default {
 </template>
 
 <style scoped>
+.menu {
+}
 .menu_burger {
   color: blue;
 }
@@ -194,20 +196,18 @@ export default {
 
 .aside {
   position: relative;
-  height: 100%;
 }
 
 .social_media {
   display: flex;
   flex-direction: column;
   position: absolute;
-
+  bottom: 0;
   width: 200px;
   height: 200px;
   display: flex;
 
   align-items: center;
-  bottom: -50px;
 }
 .social_media_block {
   width: 80px;

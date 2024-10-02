@@ -40,5 +40,5 @@
 </template>
 
 <style scoped>
-@import url(../css/pages/LoginProfile.scss);
+@import "src/css/pages/LoginProfile.scss";
 </style>

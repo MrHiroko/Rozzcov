@@ -12,7 +12,7 @@
       <div class="input_block col-12">
         <div class="posta_input_block">
           <label class="label">Почта</label>
-          <q-input rounded outlined type="email" class="posta_input" dense/>
+          <q-input rounded outlined type="email" class="posta_input" dense />
         </div>
         <div class="posta_input_block block_password">
           <label class="label">Пароль</label>
@@ -20,7 +20,8 @@
             rounded
             outlined
             type="password"
-            class="posta_input password_input" dense
+            class="posta_input password_input"
+            dense
           />
         </div>
         <div class="posta_input_block block_password">
@@ -29,7 +30,8 @@
             rounded
             outlined
             type="password"
-            class="posta_input password_input" dense
+            class="posta_input password_input"
+            dense
           />
         </div>
       </div>
@@ -43,5 +45,5 @@
 </template>
 
 <style scoped>
-@import url(../css/pages/RegistrationProfile.scss);
+@import "src/css/pages/RegistrationProfile.scss";
 </style>

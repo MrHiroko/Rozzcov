@@ -60,33 +60,39 @@ const routes = [
   },
   {
     path: "/register",
-
+    component: () => import("layouts/RegisterLayout.vue"),
     children: [
       {
         path: "/login-profile",
-        component: () => import("pages/LoginProfile.vue"),
+        component: () => import("pages/register/LoginProfile.vue"),
       },
       {
         path: "/reg-profile",
-        component: () => import("pages/RegistrationProfile.vue"),
+        component: () => import("pages/register/RegistrationProfile.vue"),
       },
-      { path: "/reg-confirm", component: () => import("pages/RegConfirm.vue") },
+      {
+        path: "/reg-confirm",
+        component: () => import("pages/register/RegConfirm.vue"),
+      },
       {
         path: "/succsess-reg",
-        component: () => import("pages/SuccessReg.vue"),
+        component: () => import("pages/register/SuccessReg.vue"),
       },
       {
         path: "/reg-name",
-        component: () => import("pages/RegistrationName.vue"),
+        component: () => import("pages/register/RegistrationName.vue"),
       },
-      { path: "/payment", component: () => import("pages/PaymentApp.vue") },
+      {
+        path: "/payment",
+        component: () => import("pages/register/PaymentApp.vue"),
+      },
       {
         path: "/choose_subscription",
-        component: () => import("pages/ChooseSub.vue"),
+        component: () => import("pages/register/ChooseSub.vue"),
       },
       {
         path: "/PaymentApp",
-        component: () => import("pages/PaymentApp.vue"),
+        component: () => import("pages/register/PaymentApp.vue"),
       },
     ],
   },

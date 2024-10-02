@@ -60,5 +60,5 @@
 </template>
 
 <style scoped>
-@import url(../css/pages/PaymentApp.scss);
+@import "src/css/pages/PaymentApp.scss";
 </style>

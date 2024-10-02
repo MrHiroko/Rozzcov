@@ -76,7 +76,7 @@ defineProps({
 
 .input-field {
   padding: 0.25rem; /* Установите верхний и нижний отступ для улучшения восприятия */
-  border: 1px solid #ccc; /* Установите стандартный бордюр */
+
   border-radius: 0.25rem; /* Углы для поля ввода */
 }
 
@@ -95,7 +95,7 @@ defineProps({
 }
 
 .btn-respond {
-  background-color: #4a90e2; /* regal-blue */
+  background-color: blue; /* regal-blue */
   color: white;
   height: 2rem; /* h-8 */
   width: 6rem; /* w-24 */

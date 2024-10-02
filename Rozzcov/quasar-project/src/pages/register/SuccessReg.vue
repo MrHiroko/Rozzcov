@@ -25,5 +25,5 @@
 </template>
 
 <style scoped>
-@import url(../css/pages/SuccessReg.scss);
+@import "src/css/pages/SuccessReg.scss";
 </style>

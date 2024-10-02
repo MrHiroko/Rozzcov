@@ -57,5 +57,5 @@
 </template>
 
 <style scoped>
-@import url(../css/pages/RegistrationName.scss);
+@import "src/css/pages/RegistrationName.scss";
 </style>

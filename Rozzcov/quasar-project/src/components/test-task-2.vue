@@ -10,7 +10,7 @@ defineProps({
     <div class="options-section">
       <div class="option" v-for="(question, index) in questions" :key="index">
         <div class="question-label my-3">
-          <span>{{ String.fromCharCode(1042 + index) }}) {{ question }}</span>
+          <span>{{ String.fromCharCode(1042 + index) }} {{ question }}</span>
         </div>
         <div class="input-group">
           <input class="input-field" type="text" placeholder="Ответ" />

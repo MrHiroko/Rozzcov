@@ -1,26 +1,25 @@
 <template>
   <q-layout view="lhh lpr lff">
     <q-header class="bg-white">
+      <q-btn
+        @click="toggleLeftDrawer"
+        icon="menu"
+        flat
+        round
+        class="text-blue menu_burger"
+      />
       <q-toolbar>
-        <q-btn
-          @click="toggleLeftDrawer"
-          icon="menu"
-          flat
-          round
-          class="text-blue menu_burger"
-        />
-
         <q-toolbar-title>
-          <headerApp></headerApp>
+          <headerApp> </headerApp>
         </q-toolbar-title>
       </q-toolbar>
     </q-header>
-
-    <q-drawer show-if-above v-model="leftDrawerOpen" side="left">
-      <quickMenu></quickMenu>
-    </q-drawer>
-
-    <q-page-container>
+    <q-aside>
+      <q-drawer show-if-above v-model="leftDrawerOpen" side="left">
+        <quickMenu></quickMenu>
+      </q-drawer>
+    </q-aside>
+    <q-page-container class="">
       <router-view />
     </q-page-container>
   </q-layout>

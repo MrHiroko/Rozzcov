@@ -46,5 +46,5 @@
 </template>
 
 <style scoped>
-@import url(../css/pages/RegConfirm.scss);
+@import "src/css/pages/RegConfirm.scss";
 </style>

@@ -73,5 +73,5 @@
 </template>
 
 <style scoped>
-@import url(../css/pages/ChooseSub.scss);
+@import "src/css/pages/ChooseSub.scss";
 </style>
