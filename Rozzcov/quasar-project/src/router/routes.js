@@ -6,51 +6,67 @@ const routes = [
       {
         path: "/coursesApp",
         component: () => import("pages/courses/courses-app.vue"),
+        meta: { title: "Теория", showHeader: true },
       },
       {
         path: "/courseApp",
         component: () => import("pages/courses/course-app.vue"),
+        meta: { title: "Главная страница", showHeader: true },
       },
       {
         path: "/videoApp",
         component: () => import("pages/courses/video-app.vue"),
+        meta: { title: "Главная страница", showHeader: true },
       },
       {
         path: "/themeCourse",
         component: () => import("pages/courses/theme-course.vue"),
+        meta: { title: "Главная страница", showHeader: true },
       },
       {
         path: "/tests",
         component: () => import("pages/courses/tests-app.vue"),
+        meta: { title: "Задания", showHeader: true },
       },
       {
         path: "/tutorship",
         component: () => import("pages/technical/tutorship-app.vue"),
+        meta: { title: "Главная страница", showHeader: false },
       },
-      { path: "/test", component: () => import("pages/courses/test-app.vue") },
+      {
+        path: "/test",
+        component: () => import("pages/courses/test-app.vue"),
+        meta: { title: "Главная страница", showHeader: true },
+      },
       {
         path: "/support",
         component: () => import("pages/technical/support-app.vue"),
+        meta: { title: "Главная страница", showHeader: false },
       },
       {
         path: "/tutor-choice",
         component: () => import("pages/technical/tutor-choice.vue"),
+        meta: { title: "Главная страница", showHeader: false },
       },
       {
         path: "/settings",
         component: () => import("pages/technical/SettingsAccount.vue"),
+        meta: { title: "Главная страница", showHeader: false },
       },
       {
         path: "/politicaltextbook",
         component: () => import("pages/courses/PoliticalTextbook.vue"),
+        meta: { title: "Главная страница", showHeader: false },
       },
       {
         path: "/test-task-app",
         component: () => import("pages/courses/test-task-app.vue"),
+        meta: { title: "Главная страница", showHeader: true },
       },
       {
         path: "/testApp",
         component: () => import("pages/courses/testApp.vue"),
+        meta: { title: "Главная страница", showHeader: true },
       },
     ],
   },

@@ -3,42 +3,27 @@ import { onMounted, ref, watch } from "vue";
 import { useRoute } from "vue-router";
 
 const route = useRoute();
-const title = ref("ТЕОРИЯ");
+const title = ref("По умолчанию");
+const showHeader = ref(true);
 
-const setTitle = () => {
-  switch (route.name) {
-    case "coursesApp":
-      title.value = "ТЕОРИЯ";
-      break;
-    case "task":
-      title.value = "ЗАДАНИЯ";
-      break;
-    case "taskSubject":
-      title.value = "ТЕСТЫ > ИСТОРИЯ";
-      break;
-    case "testApp":
-      title.value = "ТЕСТЫ > ИСТОРИЯ > ОТЕЧЕСТВЕННАЯ ИСТОРИЯ";
-      break;
-    case "theoryContent":
-      title.value = "КУРСЫ > ОЛИМПИАДЫ ПО М.О.";
-      break;
-    case "theoryMaterial":
-      title.value = "КУРСЫ > ОЛИМПИАДЫ ПО М.О. > МЕЖДУНАРОДНЫЕ ОРГАНИЗАЦИИ";
-      break;
-    case "tutorshipApp":
-      title.value = "Наставничество";
-      break;
-    default:
-      title.value = "Главная";
-  }
-};
+title.value = route.meta.title || "По умолчанию";
 
-onMounted(setTitle);
-watch(route, setTitle);
+title.value = route.meta.title || "По умолчанию";
+showHeader.value = route.meta.showHeader !== false;
+
+watch(
+  () => route.meta,
+  (newMeta) => {
+    title.value = newMeta.title || "По умолчанию";
+    showHeader.value = newMeta.showHeader !== false;
+    document.title = title.value;
+  },
+  { immediate: true }
+);
 </script>
 
 <template>
-  <header class="">
+  <header v-if="showHeader" class="">
     <div class="header">
       <div class="header__title">
         {{ title }}
