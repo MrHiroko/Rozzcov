@@ -33,7 +33,7 @@ import Card from "./CardApp.vue";
     flex-direction: column;
     align-items: center;
 
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
