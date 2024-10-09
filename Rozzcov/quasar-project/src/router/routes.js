@@ -59,6 +59,16 @@ const routes = [
         meta: { title: "УПРАВЛЕНИЕ ЗАДАНИЯМИ (АДМИН)", showHeader: true },
       },
       {
+        path: "/managetheory",
+        component: () => import("pages/technical/ManageTheory.vue"),
+        meta: { title: "УПРАВЛЕНИЕ ТЕОРИЕЙ (АДМИН)", showHeader: true },
+      },
+      {
+        path: "/managebook",
+        component: () => import("pages/technical/ManageBook.vue"),
+        meta: { title: "УПРАВЛЕНИЕ ТЕОРИЕЙ (АДМИН)", showHeader: true },
+      },
+      {
         path: "/politicaltextbook",
         component: () => import("pages/courses/PoliticalTextbook.vue"),
         meta: { title: "Главная страница", showHeader: false },
