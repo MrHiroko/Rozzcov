@@ -69,6 +69,11 @@ const routes = [
         meta: { title: "Главная страница", showHeader: false },
       },
       {
+        path: "/managetask",
+        component: () => import("pages/technical/ManageTask.vue"),
+        meta: { title: "УПРАВЛЕНИЕ ЗАДАНИЯМИ (АДМИН)", showHeader: true },
+      },
+      {
         path: "/politicaltextbook",
         component: () => import("pages/courses/PoliticalTextbook.vue"),
         meta: { title: "Главная страница", showHeader: false },
