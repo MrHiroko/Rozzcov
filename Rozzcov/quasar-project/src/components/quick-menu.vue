@@ -1,6 +1,9 @@
 <script>
+import adminPanel from "./AdminPanel.vue";
 export default {
-  components: {},
+  components: {
+    adminPanel,
+  },
   data() {
     return {
       drawerState: false,
@@ -67,6 +70,7 @@ export default {
           path: "/support",
         },
       ],
+      admin: true,
     };
   },
 };
@@ -103,6 +107,9 @@ export default {
           </ul>
         </nav>
       </div>
+      <div v-if="admin" class="AdminPanel">
+        <adminPanel></adminPanel>
+      </div>
       <div class="social_media">
         <div class="social_media_text">
           <p class="RO">ROZHKOV OLIMPIAD</p>
@@ -122,6 +129,9 @@ export default {
 </template>
 
 <style scoped>
+.AdminPanel {
+  width: 100%;
+}
 .menu {
 }
 .menu_burger {
@@ -202,7 +212,7 @@ export default {
   display: flex;
   flex-direction: column;
   position: absolute;
-  bottom: 0;
+  bottom: -200px;
   width: 200px;
   height: 200px;
   display: flex;
