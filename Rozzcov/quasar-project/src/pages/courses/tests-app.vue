@@ -19,8 +19,8 @@ onMounted(fetchCards);
 </script>
 
 <template>
-  <div class="row justify-content-center align-items-center">
-    <div class="col-6 wrap row content">
+  <div class="row cards justify-content-center align-items-center">
+    <div class="wrap row content">
       <q-card
         @click="$router.push('/test')"
         v-for="card in cards"

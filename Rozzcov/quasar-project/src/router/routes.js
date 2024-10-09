@@ -4,6 +4,21 @@ const routes = [
     component: () => import("layouts/MainLayout.vue"),
     children: [
       {
+        path: "/ManagementPanel",
+        component: () => import("pages/technical/ManagementPanel.vue"),
+        meta: { title: "Управление Заданием (АДМИН)", showHeader: true },
+      },
+      {
+        path: "/subscriptionApp",
+        component: () => import("pages/technical/subscriptionApp.vue"),
+        meta: { title: "ПОДПИСКА (АДМИН)", showHeader: true },
+      },
+      {
+        path: "/UsersApp",
+        component: () => import("pages/technical/UsersApp.vue"),
+        meta: { title: "ПОЛЬЗОВАТЕЛИ (АДМИН)", showHeader: true },
+      },
+      {
         path: "/coursesApp",
         component: () => import("pages/courses/courses-app.vue"),
         meta: { title: "Теория", showHeader: true },
