@@ -4,14 +4,17 @@ const routes = [
     component: () => import("layouts/MainLayout.vue"),
     children: [
       {
-        path: "/ManagementPanel",
-        component: () => import("pages/technical/ManagementPanel.vue"),
-        meta: { title: "Управление Заданием (АДМИН)", showHeader: true },
-      },
-      {
         path: "/subscriptionApp",
         component: () => import("pages/technical/subscriptionApp.vue"),
         meta: { title: "ПОДПИСКА (АДМИН)", showHeader: true },
+      },
+      {
+        path: "/MakeTask",
+        component: () => import("pages/technical/MakeTask.vue"),
+        meta: {
+          title: "УПРАВЛЕНИЕ ЗАДАНИЯМИ (АДМИН)> СОЗДАНИЕ",
+          showHeader: true,
+        },
       },
       {
         path: "/UsersApp",
@@ -74,7 +77,7 @@ const routes = [
         meta: { title: "УПРАВЛЕНИЕ ЗАДАНИЯМИ (АДМИН)", showHeader: true },
       },
       {
-        path: "/managetheory",
+        path: "/ManageTheory",
         component: () => import("pages/technical/ManageTheory.vue"),
         meta: { title: "УПРАВЛЕНИЕ ТЕОРИЕЙ (АДМИН)", showHeader: true },
       },

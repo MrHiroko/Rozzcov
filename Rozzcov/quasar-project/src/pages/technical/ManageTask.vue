@@ -1,64 +1,154 @@
-<script>
-export default{
-data(){
-    return{
-        subject: [
-        {
-            title: "История", 
-            themes:["Отечественная история", "Мировая история", "Культура"],
-
-        },
-        {
-            title: "Международные отношения", 
-            themes:["Отечественная история", "Мировая история", "Культура"],
-            
-        },
-        {
-            title: "Политология", 
-            themes:["Отечественная история", "Мировая история", "Культура"],
-            
-        },
-        {
-            title: "Социология", 
-            themes:["Отечественная история", "Мировая история", "Культура"],
-            
-        },
-       
-        ],
-    }
-}
-
-
-
-}
-
-</script>
-
 <template>
-<div class="subjects font" v-for="subject in subject" :key="subject.title">
-    {{ subject.title }}
-    <ul class="subjects_list font">
-    <li v-for="theme in subject.themes" :key="theme">
-       {{ theme }}
+  <div>
+    <div v-for="(category, index) in categories" :key="index">
+      <h3>{{ category.name }}</h3>
+      <ul>
+        <li
+          class="subcategories"
+          v-for="(subcategory, subIndex) in category.subcategories"
+          :key="subIndex"
+        >
+          {{ subcategory }}
         </li>
-        
-    </ul>
-    <p class="plus_list">+</p>
-    
-</div>
-<p class="plus_subject font">+</p>
+      </ul>
+      <q-btn @click="openAddSubcategoryDialog(index)" label="+" />
+    </div>
+    <q-btn @click="openAddCategoryDialog" label="Добавить категорию" />
+    <q-dialog v-model="addCategoryDialog">
+      <q-card>
+        <q-card-section>
+          <q-input v-model="newCategoryName" label="Название категории" />
+        </q-card-section>
+        <q-card-actions>
+          <q-btn
+            label="Отменить"
+            @click="closeAddCategoryDialog"
+            color="secondary"
+          />
+          <q-btn label="Добавить" @click="addCategory" color="primary" />
+        </q-card-actions>
+      </q-card>
+    </q-dialog>
+
+    <q-dialog v-model="addSubcategoryDialog">
+      <q-card>
+        <q-card-section>
+          <q-input
+            v-model="newSubcategoryName"
+            label="Название подкатегории"
+            color="secondary"
+          />
+        </q-card-section>
+        <q-card-actions>
+          <q-btn label="Отменить" @click="closeAddSubcategoryDialog" />
+          <q-btn label="Добавить" @click="addSubcategory" color="primary" />
+        </q-card-actions>
+      </q-card>
+    </q-dialog>
+  </div>
 </template>
 
-<style scoped>
-.font{
-    font-size: 24px;
-    margin-left: 30px;
-}
-.subjects_list{
-    margin-left: 20px;
-}
-.plus_list{
-    margin-left: 20px;
-}
+<script>
+export default {
+  data() {
+    return {
+      categories: [
+        {
+          name: "История",
+          subcategories: [
+            "Отечественная история",
+            "Мировая история",
+            "Культура",
+          ],
+        },
+        {
+          name: "Международные отношения",
+          subcategories: [
+            "Отечественная история",
+            "Мировая история",
+            "Культура",
+          ],
+        },
+        // другие категории
+      ],
+      addCategoryDialog: false,
+      addSubcategoryDialog: false,
+      newCategoryName: "",
+      newSubcategoryName: "",
+      selectedCategoryIndex: null,
+    };
+  },
+  methods: {
+    openAddCategoryDialog() {
+      this.addCategoryDialog = true;
+      this.newCategoryName = "";
+    },
+    closeAddCategoryDialog() {
+      this.addCategoryDialog = false;
+    },
+    addCategory() {
+      if (this.newCategoryName) {
+        this.categories.push({ name: this.newCategoryName, subcategories: [] });
+        this.$q.notify({
+          message: "Категория успешно добавлена!",
+          color: "positive",
+          position: "top",
+        });
 
+        this.closeAddCategoryDialog();
+        this.saveToBackend();
+      } else {
+        this.$q.notify({
+          message: "Введите название категории",
+          color: "negative",
+          position: "top",
+        });
+      }
+    },
+    openAddSubcategoryDialog(index) {
+      this.selectedCategoryIndex = index;
+      this.addSubcategoryDialog = true;
+      this.newSubcategoryName = "";
+    },
+    closeAddSubcategoryDialog() {
+      this.addSubcategoryDialog = false;
+    },
+    addSubcategory() {
+      if (this.newSubcategoryName && this.selectedCategoryIndex !== null) {
+        this.categories[this.selectedCategoryIndex].subcategories.push(
+          this.newSubcategoryName
+        );
+        this.$q.notify({
+          message: "Подкатегория успешно добавлена!",
+          color: "positive",
+          position: "top",
+        });
+        this.closeAddSubcategoryDialog();
+        this.saveToBackend();
+      } else {
+        this.$q.notify({
+          message: "Введите название категории",
+          color: "negative",
+          position: "top",
+        });
+      }
+    },
+    saveToBackend() {
+      axios
+        .post("/api/categories", this.categories)
+        .then((response) => {
+          console.log("Данные успешно сохранены", response);
+        })
+        .catch((error) => {
+          console.error("Ошибка при сохранении данных", error);
+        });
+    },
+  },
+};
+</script>
+
+<style scoped>
+.subcategories {
+  margin-left: 20px;
+}
 </style>

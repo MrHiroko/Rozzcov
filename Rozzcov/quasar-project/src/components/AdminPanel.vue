@@ -9,10 +9,10 @@
       <li @click="$router.push('/subscriptionApp')" class="cursor-pointer">
         подписка
       </li>
-      <li @click="$router.push('/ManagementPanel')" class="cursor-pointer">
+      <li @click="$router.push('/ManageTheory')" class="cursor-pointer">
         управление теорией
       </li>
-      <li @click="$router.push('/courseApp')" class="cursor-pointer">
+      <li @click="$router.push('/ManageTask')" class="cursor-pointer">
         управление заданиями
       </li>
     </ul>
@@ -21,6 +21,7 @@
 
 <style scoped>
 .title {
+  font-size: 28px;
   text-align: center;
   color: #8900fe;
 }
@@ -30,7 +31,7 @@
   justify-content: center;
   align-items: center;
   line-height: 200%;
-  padding: 30px;
+  padding: 20px;
   border-radius: 24px;
   background: #8900fe;
   color: white;

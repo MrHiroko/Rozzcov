@@ -68,7 +68,14 @@ export default {};
             </div>
           </div>
           <div class="">
-            <div class="about_video-block"></div>
+            <div class="about_video-block">
+              <img
+                src="../assets/img/6.png"
+                object-fit="fill"
+                width="100%"
+                alt=""
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -85,8 +92,12 @@ export default {};
           </div>
         </div>
         <div class="education_img">
-          <div class="education_img-item"></div>
-          <div class="education_img-item"></div>
+          <div class="education_img-item">
+            <img src="../assets/img/1.png" alt="" />
+          </div>
+          <div class="education_img-item">
+            <img src="../assets/img/2.png" alt="" />
+          </div>
         </div>
         <q-btn
           class="education_button button"
@@ -179,8 +190,12 @@ export default {};
           </div>
         </div>
         <div class="prepare_img">
-          <div class="prepare_img-item"></div>
-          <div class="prepare_img-item"></div>
+          <div class="prepare_img-item">
+            <img src="../assets/img/3.png" alt="" />
+          </div>
+          <div class="prepare_img-item">
+            <img src="../assets/img/4.png" alt="" />
+          </div>
         </div>
         <q-btn
           class="prepare_button button"
