@@ -69,12 +69,7 @@ export default {};
           </div>
           <div class="">
             <div class="about_video-block">
-              <img
-                src="../assets/img/6.png"
-                object-fit="fill"
-                width="100%"
-                alt=""
-              />
+              <img class="about_video" src="" alt="" />
             </div>
           </div>
         </div>
@@ -93,10 +88,10 @@ export default {};
         </div>
         <div class="education_img">
           <div class="education_img-item">
-            <img src="../assets/img/1.png" alt="" />
+            <img src="" alt="" />
           </div>
           <div class="education_img-item">
-            <img src="../assets/img/2.png" alt="" />
+            <img src="" alt="" />
           </div>
         </div>
         <q-btn
@@ -191,10 +186,10 @@ export default {};
         </div>
         <div class="prepare_img">
           <div class="prepare_img-item">
-            <img src="../assets/img/3.png" alt="" />
+            <img src="" alt="" />
           </div>
           <div class="prepare_img-item">
-            <img src="../assets/img/4.png" alt="" />
+            <img src="" alt="" />
           </div>
         </div>
         <q-btn
@@ -3011,6 +3006,11 @@ export default {};
       border-radius: 34px;
       background-color: #ffffff;
       border: 1px solid #000000;
+    }
+
+    &_video {
+      width: 100%;
+      height: 100%;
     }
   }
 

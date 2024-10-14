@@ -46,7 +46,7 @@
           <q-btn
             icon="add"
             label="Добавить вопрос"
-            @click="addQuestion"
+            @click="addQuestion()"
             color="secondary"
             class="q-mb-md"
           />
