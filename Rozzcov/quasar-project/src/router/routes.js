@@ -77,6 +77,11 @@ const routes = [
         meta: { title: "УПРАВЛЕНИЕ ЗАДАНИЯМИ (АДМИН)", showHeader: true },
       },
       {
+        path: "/managementor",
+        component: () => import("pages/technical/ManageMentor.vue"),
+        meta: { title: "НАСТАВНИКИ (АДМИН)", showHeader: true },
+      },
+      {
         path: "/ManageTheory",
         component: () => import("pages/technical/ManageTheory.vue"),
         meta: { title: "УПРАВЛЕНИЕ ТЕОРИЕЙ (АДМИН)", showHeader: true },
